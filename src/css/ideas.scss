@@ -1,5 +1,120 @@
-
+$font-title: Handlee, cursive;
+$title-font-size: 75px;
+$primary-font-size: 16px;
+$primary-font: Maven Pro, sans-serif;
+$font-color: blue;
+$primary-color: #FF9600;
+$secondary-color: 286D8F;
+body {
+  background: rgb(158, 177, 161);
+}
  h1 {
-font: 100% $font-title;
-font-size: $title-font-size;
+   font: 100% $font-title;
+   color: $font-color;
+   font-size: $title-font-size;
+}
+
+h3 {
+  font: 100% $primary-font;
+  font-size: $primary-font-size;
+}
+.wrapper {
+    background-color: DodgerBlue;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.usa {
+  background: pink;
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+
+  &__item {
+    font: 100% $font-title;
+    font-size: $primary-font-size;
+  }
+  &:hover {
+      color: red;
+  }
+}
+
+.ride {
+  background: blue;
+  width: 200px; //How can i avoid repeating this and following lines again and again?
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+
+  &__item {
+    font: 100% $font-title;
+    font-size: $primary-font-size;
+  }
+
+  &__add {
+background-color: white;
+border-radius: 10px;
+border-color: rgb(38, 213, 193);
+  }
+  &:hover {
+      color: red;
+  }
+}
+
+.drive {
+  background: orange;
+  width: 200px; //How can i avoid repeating this and following lines again and again?
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+
+  &__item {
+    font: 100% $font-title;
+    font-size: $primary-font-size;
+  }
+  &:hover {
+      color: red;
+  }
+}
+
+.paintball {
+  background: green;
+  width: 200px; //How can i avoid repeating this and following lines again and again?
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+
+  &__item {
+    font: 100% $font-title;
+    font-size: $primary-font-size;
+  }
+
+  &__add {
+    text-align: center;
+  }
+  &:hover {
+      color: red;
+  }
+}
+
+.swim {
+  background: yellow;
+  width: 200px; //How can i avoid repeating this and following lines again and again?
+  height: 200px;
+  margin: 15px;
+  text-align: center;
+
+  &__item {
+    font: 100% $font-title;
+    font-size: $primary-font-size;
+  }
+  &:hover {
+      color: red;
+  }
 }
