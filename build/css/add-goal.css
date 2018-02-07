@@ -1,33 +1,33 @@
-<<<<<<< HEAD
-.container {
-  margin: auto;
-  width: 50%; }
+.goals {
+  justify-content: center;
+  display: flex;
+  flex-direction: row; }
 
 .goal {
-  background-color: red;
-  margin: auto;
-  width: 65%;
-  display: flex;
-  height: 30px; }
+  flex-direction: row;
+  height: 50px;
+  width: 25%;
+  border-radius: 10px;
+  border: solid black 1px;
+  border-right: none; }
 
-.ideas {
-  background-color: blue;
-  display: flex;
-  width: 65%;
-  margin: auto;
-  height: 450px; }
+.goal,
+goal::-webkit-input-placeholder {
+  font-size: 25px;
+  line-height: 2;
+  font-color: black; }
 
-ol {
-  height: 100%;
-  line-height: 60px;
-  min-width: 500px; }
+.goal::placeholder {
+  font-size: 20px;
+  padding: 5px;
+  display: flex; }
 
-.goals-checkbox {
-  height: 25px;
-  width: 50px;
-  float: right;
-  border-radius: 25px; }
+.add {
+  height: 54px;
+  width: 75px;
+  border-radius: 10px;
+  background-color: #FF9600;
+  border: solid black 1px;
+  margin-left: -20px; }
 
 /*# sourceMappingURL=add-goal.css.map */
-=======
->>>>>>> 844e9ee9d0a8b4ddcd9cc2637356eb3c8e7d7d09

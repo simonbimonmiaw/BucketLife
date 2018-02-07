@@ -1,56 +1,53 @@
+$font-title: Handlee, cursive;
+$title-font-size: 30px;
+$primary-font-size: 16px;
+$primary-font: Maven Pro, sans-serif;
+$font-color: red;
+$primary-color: #FF9600;
+$secondary-color: 286D8F;
 
 
 
-
-
-.container {
-	 
-margin: auto;
-width: 50%;
+.goals {
 	
-	
+justify-content: center;
+display: flex;
+flex-direction: row;
 }
-	
-	
 
 .goal { 
 
-background-color: red;
-margin: auto;
-width: 65%;
+flex-direction: row;
+height: 50px;
+width: 25%;
+border-radius: 10px;
+border: solid black 1px;
+border-right: none;
+
+  
+}
+
+.goal,
+goal::-webkit-input-placeholder {
+    font-size: 25px;
+    line-height: 2;
+	font-color: black;
+}
+
+
+.goal::placeholder { 
+
+font-size: 20px;
+padding: 5px;
 display: flex;
-height: 30px;
-	  
 }
 
-
-
-
-.ideas { 
-
-background-color: blue;
-display: flex;
-width: 65%;
-margin: auto;
-height: 450px;
-
-}
-
-
-
-ol { 
-height: 100%;
-line-height: 60px;
-min-width: 500px;	
-
-
-}
-
-.goals-checkbox { 
-
-height: 25px;
-width: 50px;
-float: right;
-border-radius: 25px;
+.add { 
+height: 54px;
+width: 75px;
+border-radius: 10px;
+background-color: $primary-color;	
+border: solid black 1px;
+margin-left: -20px;
 }
 
