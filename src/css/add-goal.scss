@@ -16,7 +16,7 @@ body  {
 
 }
 
-
+//creating mixin for use on elements //
 @mixin add-shadow() {
 
 -webkit-box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
@@ -24,6 +24,7 @@ body  {
 box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
 }
 
+// Netsting form // 
 
 
 .goals {
@@ -32,47 +33,46 @@ justify-content: center;
 display: flex;
 flex-direction: row;
 	
-}
 
-.goal { 
 
-flex-direction: row;
-height: 50px;
-width: 25%;
-border-radius: 10px;
-border: solid black 1px;
-border-right: none;
+	.goal { 
+		flex-direction: row;
+		height: 50px;
+		width: 25%;
+		border-radius: 10px;
+		border: solid black 1px;
+		border-right: none;
  
-@include add-shadow ();
+		@include add-shadow ();
 
   
-}
+		}
 
-.goal,
-goal::-webkit-input-placeholder {
-    font-size: 25px;
-    line-height: 2;
-	font-color: black;
+		.goal,
+		goal::-webkit-input-placeholder {
+  		font-size: 25px;
+    	line-height: 2;
+		font-color: black;
 
-}
+		}		
 
+		.goal::placeholder { 
 
-.goal::placeholder { 
+		font-size: 20px;
+		padding: 5px;
+		display: flex;
+		}		
+		
+		.add { 
+		height: 54px;
+		width: 75px;
+		border-radius: 10px;
+		background-color: $primary-color;	
+		border: solid black 1px;
+		margin-left: -20px;
+		font-size: $primary-font-size;
+		@include add-shadow ();}		
 
-font-size: 20px;
-padding: 5px;
-display: flex;
-}
-
-.add { 
-height: 54px;
-width: 75px;
-border-radius: 10px;
-background-color: $primary-color;	
-border: solid black 1px;
-margin-left: -20px;
-font-size: $primary-font-size;
-@include add-shadow ();
-	
-}
+		}
+		// Netsting form end// 
 
