@@ -4,17 +4,17 @@ Error: It's not clear which file to import for '@import "global"'.
          _global.scss
          global.scss
        Please delete or rename all but one of these files.
-        on line 1 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/sign-in.scss
+        on line 1 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss
 
-1: @import 'global';	
+1: @import 'global';
 2: 
-3: 
-4: 
-5: //creating mixin for use on elements //
-6: @mixin add-shadow() {
+3: @mixin box-shadow($header-shadow) { // 
+4:     -webkit-box-shadow: $header-shadow;
+5:     -moz-box-shadow: $header-shadow;
+6:     -ms-box-shadow: $header-shadow;
 
 Backtrace:
-/Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/sign-in.scss:1
+/Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss:1
 /Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:45:in `import'
 /Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -51,4 +51,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: It's not clear which file to import for '@import \"global\"'.\A        Candidates:\A          _global.scss\A          global.scss\A        Please delete or rename all but one of these files.\A         on line 1 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/sign-in.scss\A \A 1: @import 'global';	\A 2: \A 3: \A 4: \A 5: //creating mixin for use on elements //\A 6: @mixin add-shadow() {"; }
+  content: "Error: It's not clear which file to import for '@import \"global\"'.\A        Candidates:\A          _global.scss\A          global.scss\A        Please delete or rename all but one of these files.\A         on line 1 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss\A \A 1: @import 'global';\A 2: \A 3: @mixin box-shadow($header-shadow) { // \A 4:     -webkit-box-shadow: $header-shadow;\A 5:     -moz-box-shadow: $header-shadow;\A 6:     -ms-box-shadow: $header-shadow;"; }
