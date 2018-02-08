@@ -16,6 +16,16 @@ body  {
 
 }
 
+
+@mixin add-shadow() {
+
+-webkit-box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
+box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
+}
+
+
+
 .goals {
 	
 justify-content: center;
@@ -32,9 +42,8 @@ width: 25%;
 border-radius: 10px;
 border: solid black 1px;
 border-right: none;
--webkit-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
--moz-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
+ 
+@include add-shadow ();
 
   
 }
@@ -63,8 +72,7 @@ background-color: $primary-color;
 border: solid black 1px;
 margin-left: -20px;
 font-size: $primary-font-size;
--webkit-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
--moz-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
+@include add-shadow ();
+	
 }
 
