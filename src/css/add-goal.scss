@@ -4,15 +4,24 @@ $primary-font-size: 16px;
 $primary-font: Maven Pro, sans-serif;
 $font-color: red;
 $primary-color: #FF9600;
-$secondary-color: 286D8F;
+$secondary-color: #286D8F;
 
+body  { 
 
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
 
 .goals {
 	
 justify-content: center;
 display: flex;
 flex-direction: row;
+	
 }
 
 .goal { 
@@ -23,6 +32,9 @@ width: 25%;
 border-radius: 10px;
 border: solid black 1px;
 border-right: none;
+-webkit-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
+-moz-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
+box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
 
   
 }
@@ -32,6 +44,7 @@ goal::-webkit-input-placeholder {
     font-size: 25px;
     line-height: 2;
 	font-color: black;
+
 }
 
 
@@ -49,5 +62,9 @@ border-radius: 10px;
 background-color: $primary-color;	
 border: solid black 1px;
 margin-left: -20px;
+font-size: $primary-font-size;
+-webkit-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
+-moz-box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
+box-shadow: 2px 8px 23px -4px rgba(0,0,0,0.65);
 }
 
