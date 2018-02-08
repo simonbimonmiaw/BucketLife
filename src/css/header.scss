@@ -1,10 +1,19 @@
 @import 'global';
 
+@mixin box-shadow($header-shadow) { // 
+    -webkit-box-shadow: $header-shadow;
+    -moz-box-shadow: $header-shadow;
+    -ms-box-shadow: $header-shadow;
+    box-shadow: $header-shadow;
+}
+
+
 header {
     background-color:$primary-color;
     display: flex;
-    flex-direction: row;
-    margin-bottom:10px;
+    margin-bottom:50px;
+    @include box-shadow(0px 4px 5px -1px rgba(0,0,0,0.41)); // Shadow on header 
+
     
     .logo {
         display: flex;
@@ -15,24 +24,20 @@ header {
         flex-direction: row;
         align-self: center;
         font-family:$primary-font;
-        background-color:$secondary-color;
-        -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.42);
--moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.42);
-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.42);
     }
     
     ul {
-        list-style-type: none; /* Removes bullets */
+        list-style-type: none; // Removes bullets
     }
     
     li {
-        display: inline; /* Links on same line */
+        display: inline; // Links on same line
         
         a {
             color:$secondary-color;
             text-decoration: none;
-            padding-right:50px;
-            color:Gray;
+            margin-right:50px;
+            color:$secondary-color;
         }
 
         a:hover {
