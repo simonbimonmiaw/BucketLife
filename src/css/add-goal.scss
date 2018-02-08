@@ -1,18 +1,11 @@
-$font-title: Handlee, cursive;
-$title-font-size: 30px;
-$primary-font-size: 16px;
-$primary-font: Maven Pro, sans-serif;
-$font-color: red;
-$primary-color: #FF9600;
-$secondary-color: #286D8F;
+@import 'global';
 
 
 //creating mixin for use on elements //
 @mixin add-shadow() {
-
--webkit-box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
-box-shadow: 2px 8px 9px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.72);
+-moz-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.72);
+box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.72);
 }
 
 // Netsting form // 
@@ -43,7 +36,9 @@ flex-direction: row;
 		goal::-webkit-input-placeholder {
   		font-size: 25px;
     	line-height: 2;
-		font-color: black;
+		color: black;
+		display:flex;
+		padding-left: 20px;
 
 		}		
 
@@ -60,9 +55,9 @@ flex-direction: row;
 		border-radius: 10px;
 		background-color: $primary-color;	
 		border: solid black 1px;
-		margin-left: -20px;
+		margin-left: -75px;
 		font-size: $primary-font-size;
-		@include add-shadow ();
+		
 		
 		}		
 		}
