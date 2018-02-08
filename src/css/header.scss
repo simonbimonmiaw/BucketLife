@@ -1,0 +1,45 @@
+/* Line 1-7 should be placed in global.scss but it doesn't work when we use seperate files */
+$font-title: Handlee, cursive;
+$title-font-size: 30px;
+$primary-font-size: 16px;
+$primary-font: Maven Pro, sans-serif;
+$font-color: red;
+$primary-color: #FF9600;
+$secondary-color: #286D8F;
+
+header {
+    background-color:$primary-color;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:10px;
+    
+    .logo {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    nav {
+        flex-direction: row;
+        align-self: center;
+        font-family:$primary-font;
+        background-color:blue;
+    }
+    
+    ul {
+        list-style-type: none; /* Removes bullets */
+    }
+    
+    li {
+        display: inline; /* Links on same line */
+        
+        a {
+            color:$secondary-color;
+            text-decoration: none;
+            padding-right:50px;
+        }
+        
+        a:hover {
+            color:#fff;
+        }
+    }
+}
