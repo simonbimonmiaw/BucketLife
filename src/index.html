@@ -41,6 +41,16 @@
                 <li>Donate blood <input type="checkbox" class="goals-checkbox"></li>
             </ol>
 		</form>
+        <div id="app">{{ message }}</div> <!-- Vue test -->
 	</section>
+    
+    <script>
+        var app = new Vue({
+          el: '#app',
+          data: {
+            message: 'Hello Vue!'
+          }
+        })
+    </script>
 </body>
 </html>
