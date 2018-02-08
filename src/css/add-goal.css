@@ -1,0 +1,31 @@
+.goals {
+  justify-content: center;
+  display: flex;
+  flex-direction: row; }
+
+.goal {
+  flex-direction: row;
+  height: 50px;
+  width: 25%;
+  border-radius: 10px;
+  border: solid black 1px;
+  border-right: none; }
+
+.goal,
+goal::-webkit-input-placeholder {
+  font-size: 25px;
+  line-height: 2;
+  font-color: black; }
+
+.goal::placeholder {
+  font-size: 20px;
+  padding: 5px;
+  display: flex; }
+
+.add {
+  height: 54px;
+  width: 75px;
+  border-radius: 10px;
+  background-color: #FF9600;
+  border: solid black 1px;
+  margin-left: -20px; }
