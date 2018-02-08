@@ -6,15 +6,6 @@ $font-color: red;
 $primary-color: #FF9600;
 $secondary-color: #286D8F;
 
-body  { 
-
-	background: url(../images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-}
 
 //creating mixin for use on elements //
 @mixin add-shadow() {
@@ -35,7 +26,7 @@ flex-direction: row;
 	
 
 
-	.goal { 
+		.goal { 
 		flex-direction: row;
 		height: 50px;
 		width: 25%;
@@ -71,8 +62,9 @@ flex-direction: row;
 		border: solid black 1px;
 		margin-left: -20px;
 		font-size: $primary-font-size;
-		@include add-shadow ();}		
-
+		@include add-shadow ();
+		
+		}		
 		}
 		// Netsting form end// 
 
