@@ -22,7 +22,7 @@ header {
         flex-direction: row;
         align-self: center;
         font-family:$primary-font;
-        background-color:blue;
+        background-color:$secondary-color;
     }
     
     ul {
@@ -36,6 +36,7 @@ header {
             color:$secondary-color;
             text-decoration: none;
             padding-right:50px;
+            color:Gray;
         }
         
         a:hover {
