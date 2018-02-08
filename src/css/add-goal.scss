@@ -3,9 +3,9 @@
 
 //creating mixin for use on elements //
 @mixin add-shadow() {
--webkit-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.72);
--moz-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.72);
-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.72);
+-webkit-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
+-moz-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
+box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
 }
 
 // Netsting form // 
@@ -56,10 +56,21 @@ flex-direction: row;
 		background-color: $primary-color;	
 		border: solid black 1px;
 		margin-left: -75px;
-		font-size: $primary-font-size;
+		font-size: $secondary-font-size;
+		text-transform: uppercase;
+		}
+	
+		.add:hover {
 		
+  		background-color: rgba(6,143,0,1.00);
+		-o-transition:.5s;
+		-ms-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;	
+		transition:.5s;	
+    
+  		}
 		
-		}		
 		}
 		// Netsting form end// 
 
