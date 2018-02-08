@@ -1,120 +1,160 @@
 $font-title: Handlee, cursive;
 $title-font-size: 75px;
-$primary-font-size: 16px;
+$primary-font-size: 25px;
 $primary-font: Maven Pro, sans-serif;
-$font-color: blue;
-$primary-color: #FF9600;
+$font-color: white;
+$primary-color: rgb(227, 2, 118);
 $secondary-color: 286D8F;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+
+
 body {
-  background: rgb(158, 177, 161);
+  background:  rgb(223, 235, 234);
 }
  h1 {
    font: 100% $font-title;
    color: $font-color;
    font-size: $title-font-size;
+   margin-bottom: 1%;
+   text-align: center;
+   line-height: 80px;
 }
 
-h3 {
+.Subtitle {
   font: 100% $primary-font;
-  font-size: $primary-font-size;
+  font-size: 16px;
+  text-align: center;
+  padding: 0px 22%;
+  color: $font-color;
+  margin-bottom: 5%;
 }
-.wrapper {
-    background-color: DodgerBlue;
+.content-wrapper {
+    background-color: rgb(171, 161, 181);
+    grid-column: 3 / span 8;
+
+}
+
+@mixin add-button() {
+background-color: white;
+border-color: rgb(227, 2, 118);
+border-radius: 20px;
+border-width: 3px;
+border-style: solid;
+height: 40px;
+width: 40px;
+margin-top: 10%;
+
+  &:hover {
+    background-color: rgb(227, 2, 118);
+  }
 }
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
-.usa {
-  background: pink;
-  width: 200px;
-  height: 200px;
-  margin: 15px;
+@mixin image-box() {
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin: 8px;
   text-align: center;
+  border-radius: 10px;
+}
+.usa {
+  background-image:url('https://www.austinadventures.com/assets/4821652973_06a6c284c5.jpg');
+
+  @include image-box();
 
   &__item {
     font: 100% $font-title;
     font-size: $primary-font-size;
+    margin-top: 40%;
   }
+  &__add {
+    @include add-button();
+  }
+
   &:hover {
-      color: red;
+    color: rgb(227, 2, 118);
   }
 }
 
 .ride {
-  background: blue;
-  width: 200px; //How can i avoid repeating this and following lines again and again?
-  height: 200px;
-  margin: 15px;
-  text-align: center;
+  background-image:url('https://fthmb.tqn.com/4T3vgdT_7FFC5UxS-i_kaHZCOjI=/3864x2579/filters:no_upscale()/he-s-a-lone-rider-494210377-570e2cd13df78c7d9e5034a8.jpg');
+
+    @include image-box();
 
   &__item {
     font: 100% $font-title;
     font-size: $primary-font-size;
+      margin-top: 40%;
+  }
+  &__add {
+    @include add-button();
   }
 
-  &__add {
-background-color: white;
-border-radius: 10px;
-border-color: rgb(38, 213, 193);
-  }
   &:hover {
-      color: red;
+    color: rgb(227, 2, 118);
   }
 }
 
 .drive {
-  background: orange;
-  width: 200px; //How can i avoid repeating this and following lines again and again?
-  height: 200px;
-  margin: 15px;
-  text-align: center;
+  background-image:url('http://c7.alamy.com/zooms/a0bb28bed5ef44fea9c7110df22d2062/australia-new-south-wales-sydney-lane-cove-couple-driving-car-through-g3tgpw.jpg');
+
+    @include image-box();
 
   &__item {
     font: 100% $font-title;
     font-size: $primary-font-size;
+      margin-top: 40%;
+  }
+  &__add {
+    @include add-button();
   }
   &:hover {
-      color: red;
+    color: rgb(227, 2, 118);
   }
 }
 
 .paintball {
-  background: green;
-  width: 200px; //How can i avoid repeating this and following lines again and again?
-  height: 200px;
-  margin: 15px;
-  text-align: center;
+  background-image:url('https://fthmb.tqn.com/vTwek6MxlK6HxUyfjXGPdb1q-C8=/768x0/filters:no_upscale()/102635862-56a6e1d53df78cf77290ac3a.jpg');
+
+    @include image-box();
 
   &__item {
     font: 100% $font-title;
     font-size: $primary-font-size;
+    margin-top: 40%;
   }
-
   &__add {
-    text-align: center;
+    @include add-button();
   }
   &:hover {
-      color: red;
+    color: rgb(227, 2, 118);
   }
 }
 
 .swim {
   background: yellow;
-  width: 200px; //How can i avoid repeating this and following lines again and again?
-  height: 200px;
-  margin: 15px;
-  text-align: center;
+
+    @include image-box();
 
   &__item {
     font: 100% $font-title;
     font-size: $primary-font-size;
+    margin-top: 40%;
+  }
+  &__add {
+    @include add-button();
   }
   &:hover {
-      color: red;
+    color: rgb(227, 2, 118);
   }
 }
