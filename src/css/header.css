@@ -1,25 +1,35 @@
 /*
-Error: It's not clear which file to import for '@import "global"'.
-       Candidates:
-         _global.scss
-         global.scss
-       Please delete or rename all but one of these files.
-        on line 1 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss
+Error: Undefined variable: "$primary-color".
+        on line 12 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss
 
-1: @import 'global';
-2: 
-3: @mixin box-shadow($header-shadow) { // 
-4:     -webkit-box-shadow: $header-shadow;
-5:     -moz-box-shadow: $header-shadow;
-6:     -ms-box-shadow: $header-shadow;
+7:     box-shadow: $header-shadow;
+8: }
+9: 
+10: 
+11: header {
+12:     background-color:$primary-color;
+13:     display: flex;
+14:     margin-bottom:50px;
+15:     @include box-shadow(0px 4px 5px -1px rgba(0,0,0,0.41)); // Shadow on header 
+16: 
+17:     
 
 Backtrace:
-/Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss:1
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:45:in `import'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss:12
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
@@ -51,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: It's not clear which file to import for '@import \"global\"'.\A        Candidates:\A          _global.scss\A          global.scss\A        Please delete or rename all but one of these files.\A         on line 1 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss\A \A 1: @import 'global';\A 2: \A 3: @mixin box-shadow($header-shadow) { // \A 4:     -webkit-box-shadow: $header-shadow;\A 5:     -moz-box-shadow: $header-shadow;\A 6:     -ms-box-shadow: $header-shadow;"; }
+  content: "Error: Undefined variable: \"$primary-color\".\A         on line 12 of /Applications/MAMP/htdocs/BucketLife/BucketLife/src/css/header.scss\A \A 7:     box-shadow: $header-shadow;\A 8: }\A 9: \A 10: \A 11: header {\A 12:     background-color:$primary-color;\A 13:     display: flex;\A 14:     margin-bottom:50px;\A 15:     @include box-shadow(0px 4px 5px -1px rgba(0,0,0,0.41)); // Shadow on header \A 16: \A 17:     "; }
