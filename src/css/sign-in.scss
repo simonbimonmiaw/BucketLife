@@ -4,16 +4,18 @@
 
 //creating mixin for use on elements //
 @mixin add-shadow() {
--webkit-box-shadow: 0px 4px 109px 52px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 4px 109px 52px rgba(0,0,0,0.75);
-box-shadow: 0px 4px 109px 52px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 26px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 26px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 26px 2px rgba(0,0,0,0.75);
 }
 
 
 .logo { 
-width: 10%;
+width: 50%;
 display: flex;
-color: white;	
+margin: auto;
+padding: 10px;
+
 
 }
 
@@ -27,14 +29,14 @@ color: white;
 
 }
 
-/* Sign-in form Layout */
+
 .wrapper {
   color: #fafafa;
   margin: 3em auto;
   margin-top: 200px;
   padding: 0 1em 5em;
   max-width: 370px;
-  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-family: $primary-font;
   @include add-shadow ();
   	
 }
@@ -67,8 +69,7 @@ form {
 }
 
 .form-input input:focus {
-  border-bottom: 2px solid #c0c0c0;
-  outline: none;
+  border: 100px;
 }
 
 .sign-in-button {
@@ -95,18 +96,3 @@ form {
   background: $secondary-color;
 }
 
-.form-footer {
-  font-size: 1em;
-  padding: 2em 0;
-  text-align: center;
-}
-
-.form-footer a {
-  color: #8c8c8c;
-  text-decoration: none;
-  transition: border-color 0.3s;
-}
-
-.form-footer a:hover {
-  border-bottom: 1px dotted #8c8c8c;
-}
