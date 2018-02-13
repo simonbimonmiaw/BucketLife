@@ -1,0 +1,1 @@
+var button=document.getElementById("slidebtn").onclick=function(){var n=document.getElementsByClassName("inspiration")[0].className;document.getElementsByClassName("inspiration")[0].className="inspiration inspiration--showing"===n?"inspiration":"inspiration inspiration--showing"};
