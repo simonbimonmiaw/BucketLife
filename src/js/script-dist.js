@@ -2,9 +2,11 @@ var bucketList = new Vue({
   el: '#app',
   data: {
     goals: [
-      'Bestig et bjerg'
-    ]
+      'Bestig et bjerg', 'Punkt nr 2'
+    ],
+    completeGoal: []
   },
+    
   methods: {
     addGoal() {
       var input = this.$refs.my_input.value;
@@ -18,8 +20,5 @@ var bucketList = new Vue({
     deleteGoal(index) {
       this.goals.splice(index, 1);
     },
-    completeGoal(index) {
-      this.goals.splice(index, 1);
-    }
   }
 })

@@ -36,8 +36,8 @@
 	<section class="goals-list">
 		<form>
             <ol>
-                <li class="animated fadeInDown" v-for="(item, index) in goals" >{{ item }}
-                    <input type="checkbox" class="goal-options" v-on:click.prevent="completeGoal(index)">
+                <li class="animated fadeInDown" v-for="(item, index) in goals" v-bind:class="{ done: completeGoal }" >{{ item }}
+                    <input type="checkbox" class="goal-options" v-model="completeGoal" :value="item" v-on:click=>
                     <button class="goal-options" v-on:click.prevent="deleteGoal(index)">X</button>
                 </li>
             </ol>
