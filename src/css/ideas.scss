@@ -5,13 +5,12 @@ $primary-font: Maven Pro, sans-serif;
 $font-color: white;
 $primary-color: rgb(227, 2, 118);
 $secondary-color: 286D8F;
-
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
 }
+
 
 body {
   background:  rgb(223, 235, 234);
@@ -25,7 +24,7 @@ body {
    line-height: 80px;
 }
 
-.subtitle {
+.Subtitle {
   font: 100% $primary-font;
   font-size: 16px;
   text-align: center;
@@ -34,35 +33,20 @@ body {
   margin-bottom: 5%;
 }
 .content-wrapper {
-  background-color: blue;
-  grid-column: 4 / span 6;
-}
+    background-color: rgb(171, 161, 181);
+    grid-column: 3 / span 8;
 
-.content-wrapper--aside {
-  background-color: blue;
-  grid-column: 2 / span 5;
-}
-
-.inspiration {
-  grid-column: 12 / span 6;
-  margin-left: 20px;
-  background-color: green;
-  transition: right ease-in-out 0.3s;
-}
-
-.inspiration--showing {
-  grid-column: 8 /span 5;
 }
 
 @mixin add-button() {
-  background-color: white;
-  border-color: rgb(227, 2, 118);
-  border-radius: 20px;
-  border-width: 3px;
-  border-style: solid;
-  height: 40px;
-  width: 40px;
-  margin-top: 10%;
+background-color: white;
+border-color: rgb(227, 2, 118);
+border-radius: 20px;
+border-width: 3px;
+border-style: solid;
+height: 40px;
+width: 40px;
+margin-top: 10%;
 
   &:hover {
     background-color: rgb(227, 2, 118);
