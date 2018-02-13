@@ -1,10 +1,20 @@
 @import 'global';
 
-@mixin box-shadow($header-shadow) { // 
-    -webkit-box-shadow: $header-shadow;
-    -moz-box-shadow: $header-shadow;
-    -ms-box-shadow: $header-shadow;
-    box-shadow: $header-shadow;
+$shadow: box-shadow(0px 0px 18px -1px rgba(0,0,0,0.42));
+$checkboxSize:;
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin ($checkboxSize) {
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
 }
 
 .goals-list {
@@ -18,14 +28,40 @@
         background-color:$primary-color;
         padding:50px 90px;
         @include box-shadow(0px 0px 18px -1px rgba(0,0,0,0.42)); // Shadow on form
+        min-width:650px;
         
         li {
             margin-bottom:30px;
+            
+            .goal-options {
+                background:none;
+                border: none;
+                float:right;
+                padding:0;
+            }
+            
+            button {
+                font-size:25px;
+            }
+            
+            :hover {
+                color:red;
+            }
+            
+            input[type=checkbox] {
+                -ms-transform: scale(2); /* IE */
+                -moz-transform: scale(2); /* FF */
+                -webkit-transform: scale(2); /* Safari and Chrome */
+                -o-transform: scale(2); /* Opera */
+                padding: 0;
+                margin-top: 8px;
+                margin-left: 20px;
+            }
         }
         
-        .goals-checkbox {
-            float:right;
-            margin-left:70px;
+        .done {
+            color: #d9d9d9;
+            text-decoration: line-through;
         }
     }
 }

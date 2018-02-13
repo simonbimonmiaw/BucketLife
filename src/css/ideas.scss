@@ -5,6 +5,7 @@ $primary-font: Maven Pro, sans-serif;
 $font-color: white;
 $primary-color: rgb(227, 2, 118);
 $secondary-color: 286D8F;
+<<<<<<< HEAD
 
 
 @import url("header.scss");
@@ -14,6 +15,14 @@ $secondary-color: 286D8F;
 //   grid-template-columns: repeat(12, 1fr);
 //   grid-template-rows: auto;
 // }
+=======
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+>>>>>>> 162685d8e4da1101fe82d86a8dcc3dd3967d95bb
+
 
 body {
   background:  rgb(223, 235, 234);
@@ -29,7 +38,7 @@ body {
    line-height: 80px;
 }
 
-.subtitle {
+.Subtitle {
   font: 100% $primary-font;
   font-size: 16px;
   text-align: center;
@@ -37,6 +46,7 @@ body {
   color: $font-color;
   margin-bottom: 5%;
 }
+<<<<<<< HEAD
 
 .completed {
   background-color: white;
@@ -97,6 +107,23 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-color: orange;
+=======
+.content-wrapper {
+    background-color: rgb(171, 161, 181);
+    grid-column: 3 / span 8;
+
+}
+
+@mixin add-button() {
+background-color: white;
+border-color: rgb(227, 2, 118);
+border-radius: 20px;
+border-width: 3px;
+border-style: solid;
+height: 40px;
+width: 40px;
+margin-top: 10%;
+>>>>>>> 162685d8e4da1101fe82d86a8dcc3dd3967d95bb
 
   &:hover {
     background-color: rgb(227, 2, 118);
