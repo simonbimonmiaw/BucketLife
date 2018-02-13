@@ -1,0 +1,233 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+.completedText {
+  grid-area: textAreaLeft; }
+
+.inspiredText {
+  grid-area: textAreaRight; }
+
+h2, h1, p {
+  text-align: center;
+  color: white; }
+
+.myList {
+  height: auto;
+  background-color: #1c1a1c;
+  top: 20%;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  display: block;
+  text-align: center; }
+
+.completed {
+  height: auto;
+  background-color: #1c1a1c;
+  top: 20%;
+  display: grid;
+  grid-template-columns: 600px 100px;
+  grid-template-rows: auto;
+  grid-template-areas: "textAreaLeft buttonLeft" "completedGoals buttonLeft";
+  position: absolute;
+  left: -600px;
+  transition: left ease-in-out 0.3s; }
+
+.completed.hide {
+  position: absolute;
+  left: 50px; }
+
+.inspiration {
+  height: auto;
+  background-color: #1c1a1c;
+  top: 20%;
+  display: grid;
+  grid-template-columns: 100px 600px;
+  grid-template-rows: auto;
+  grid-template-areas: "buttonRight textAreaRight" "buttonRight ideaGoal";
+  position: absolute;
+  right: -600px;
+  transition: right ease-in-out 0.3s; }
+
+.inspiration.hide {
+  position: absolute;
+  right: 50px; }
+
+.toggleRight {
+  display: inline-block;
+  grid-area: buttonRight;
+  background-color: orange; }
+  .toggleRight:focus {
+    outline: none;
+    border: none; }
+
+.toggleLeft {
+  display: inline-block;
+  grid-area: buttonLeft;
+  background-color: red;
+  background-color: orange; }
+  .toggleLeft:focus {
+    outline: none;
+    border: none; }
+
+h4 {
+  transform: rotate(90deg);
+  font-size: 50px;
+  padding: 0;
+  margin-top: -200px; }
+
+.flexContainerLeft {
+  grid-area: completedGoals;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px; }
+
+.flexContainerRight {
+  grid-area: ideaGoal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px; }
+
+.usa {
+  background-image: url("https://www.austinadventures.com/assets/4821652973_06a6c284c5.jpg");
+  border-color: black;
+  border: solid;
+  border-width: 4px;
+  background-size: cover;
+  width: 250px;
+  height: 100px;
+  margin: 15px 5px;
+  text-align: center;
+  border-radius: 5px; }
+  .usa:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.ride {
+  background-image: url("https://fthmb.tqn.com/4T3vgdT_7FFC5UxS-i_kaHZCOjI=/3864x2579/filters:no_upscale()/he-s-a-lone-rider-494210377-570e2cd13df78c7d9e5034a8.jpg");
+  border-color: black;
+  border: solid;
+  border-width: 4px;
+  background-size: cover;
+  width: 250px;
+  height: 100px;
+  margin: 15px 5px;
+  text-align: center;
+  border-radius: 5px; }
+  .ride:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.drive {
+  background-image: url("http://c7.alamy.com/zooms/a0bb28bed5ef44fea9c7110df22d2062/australia-new-south-wales-sydney-lane-cove-couple-driving-car-through-g3tgpw.jpg");
+  border-color: black;
+  border: solid;
+  border-width: 4px;
+  background-size: cover;
+  width: 250px;
+  height: 100px;
+  margin: 15px 5px;
+  text-align: center;
+  border-radius: 5px; }
+  .drive:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.paintball {
+  background-image: url("https://fthmb.tqn.com/vTwek6MxlK6HxUyfjXGPdb1q-C8=/768x0/filters:no_upscale()/102635862-56a6e1d53df78cf77290ac3a.jpg");
+  border-color: black;
+  border: solid;
+  border-width: 4px;
+  background-size: cover;
+  width: 250px;
+  height: 100px;
+  margin: 15px 5px;
+  text-align: center;
+  border-radius: 5px; }
+  .paintball:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.swim {
+  background-image: url("http://yourdream.s3.amazonaws.com/media/cache/49/81/49811164c1ec4dd5c196b05f36b50bef.jpg");
+  border-color: black;
+  border: solid;
+  border-width: 4px;
+  background-size: cover;
+  width: 250px;
+  height: 100px;
+  margin: 15px 5px;
+  text-align: center;
+  border-radius: 5px; }
+  .swim:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+/* add button */
+button.goal__add {
+  border: none;
+  background-color: black;
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px 30px;
+  display: inline-block;
+  margin: 22px 30px;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-size: 16px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+button.goal__add span {
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+button.goal__add i {
+  font-size: 19px;
+  left: 22px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+button.goal__add:hover {
+  background-color: orange; }
+
+button.goal__add:hover span,
+button.goal__add.hover span {
+  -webkit-transform: translate3d(10px, 0px, 0px);
+  /* Moves the text 10px to the right on hover */
+  transform: translate3d(10px, 0px, 0px);
+  /* Moves the text 10px to the right on hover */
+  opacity: 1;
+  font-family: cursive;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out; }
+
+button.goal__add:hover i,
+button.goal__add.hover i {
+  opacity: 1; }
+
+button.goal__add:active span {
+  -webkit-transform: translate3d(14px, 0px, 0px);
+  transform: translate3d(14px, 0px, 0px); }
+
+button.goal__add:active i {
+  left: 18px; }
+
+/* add button */
