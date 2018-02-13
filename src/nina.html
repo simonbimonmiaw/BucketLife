@@ -1,23 +1,28 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../build/css/nina.css">
+<!-- <link rel="stylesheet" type="text/css" href="../build/css/global.css">
+<link rel="stylesheet" type="text/css" href="../build/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../build/css/add-goal.css">
+<link rel="stylesheet" type="text/css" href="../build/css/goals-list.css"> -->
 <link rel="stylesheet" type="text/css" href="../build/css/header.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <title>BucketLife - You Only Live Once</title>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
 	<header>
-				<a href="index.html">
-						<img src="http://via.placeholder.com/200x100" alt="placeholder" class="logo">
-				</a>
+        <a class="logo" href="index.html">
+            <img src="../build/images/logo.png" alt="placeholder">
+        </a>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="ideas.html">Bucket list ideas</a></li>
+				<li><a href="index.html" onmousedown="sound1.play()">Home</a></li>
+				<li><a href="ideas.html">Bucket List Ideas</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -32,9 +37,27 @@
 		</aside>
 
 		<aside class="myList">
-			<h1>My bucket list</h1>
-			<p>Do awesome things!</p>
+<h1>My bucket list</h1>
+				<!-- <form class="goals" v-on:submit.prevent="addGoal()">
+					<input ref="my_input" class="goal" maxlength="35" type="text" placeholder="+ Add a new goal">
+					<button type="submit" class="add">Add</button>
+				</form>
+			</section>
+			<section class="goals-list">
+				<form>
+								<ol>
+										<li class="animated fadeInDown" v-for="(item, index) in goals" v-bind:class="{ done: completeGoal }" >{{ item }}
+												<input type="checkbox" class="goal-options" v-model="completeGoal" :value="item" v-on:click=>
+												<button class="goal-options" v-on:click.prevent="deleteGoal(index)">X</button>
+										</li>
+								</ol>
+				</form> -->
 		</aside>
+
+<div class="suggestion">
+	<p class="suggestion__text">Check out<br>some ideas!</p>
+	<img class="suggestion__image" src="../build/images/arrow.svg" alt="Arrow">
+</div>
 
 	<aside class="inspiration">
 		<button v-on:click="toggleInspiration" class="toggleRight"><h4>Inspiration</h4></button>
@@ -111,10 +134,11 @@
 	// toggleCompleted: function (event) {
 	// 	document.getElementsByClassName('completed')[0].classList.toggle("hide");
 	// }
-
 //make the left toggle menu open and close
 	</script>
 <script src="../src/js/script.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/script-dist.js"></script> -->
 
 </body>
 </html>

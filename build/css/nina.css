@@ -9,7 +9,7 @@ body {
 .inspiredText {
   grid-area: textAreaRight; }
 
-h2, h1, p {
+h2, h1 {
   text-align: center;
   color: white; }
 
@@ -18,10 +18,22 @@ h2, h1, p {
   background-color: #1c1a1c;
   top: 20%;
   justify-content: center;
-  margin: 0 auto;
+  height: 70vh;
+  margin: 0 25%;
   width: 50%;
-  display: block;
+  position: absolute;
   text-align: center; }
+
+.suggestion {
+  position: absolute;
+  margin-left: 78%;
+  margin-top: 30%; }
+  .suggestion__text {
+    color: black;
+    size: 12px;
+    margin-button: 5px; }
+  .suggestion__image {
+    height: 60px; }
 
 .completed {
   height: auto;
@@ -55,22 +67,34 @@ h2, h1, p {
   position: absolute;
   right: 50px; }
 
-.toggleRight {
+button.toggleRight {
   display: inline-block;
   grid-area: buttonRight;
   background-color: orange; }
-  .toggleRight:focus {
+  button.toggleRight:focus {
     outline: none;
-    border: none; }
+    border-style: none; }
+  button.toggleRight:hover {
+    background-color: #1c1a1c;
+    color: orange;
+    border-style: outset;
+    border-color: orange;
+    border-width: 3px; }
 
-.toggleLeft {
+button.toggleLeft {
   display: inline-block;
   grid-area: buttonLeft;
   background-color: red;
   background-color: orange; }
-  .toggleLeft:focus {
+  button.toggleLeft:focus {
     outline: none;
-    border: none; }
+    border-style: none; }
+  button.toggleLeft:hover {
+    background-color: #1c1a1c;
+    color: orange;
+    border-style: outset;
+    border-color: orange;
+    border-width: 3px; }
 
 h4 {
   transform: rotate(90deg);
@@ -187,8 +211,8 @@ button.goal__add {
   font-size: 16px;
   outline: none;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: all ease-in;
+  transition: all ease-in; }
 
 button.goal__add span {
   display: inline-block;
@@ -203,9 +227,6 @@ button.goal__add i {
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
 
-button.goal__add:hover {
-  background-color: orange; }
-
 button.goal__add:hover span,
 button.goal__add.hover span {
   -webkit-transform: translate3d(10px, 0px, 0px);
@@ -213,11 +234,7 @@ button.goal__add.hover span {
   transform: translate3d(10px, 0px, 0px);
   /* Moves the text 10px to the right on hover */
   opacity: 1;
-  font-family: cursive;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out; }
+  font-family: cursive; }
 
 button.goal__add:hover i,
 button.goal__add.hover i {

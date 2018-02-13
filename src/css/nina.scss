@@ -9,7 +9,7 @@ body {
 .inspiredText {
   grid-area: textAreaRight;
 }
-h2, h1, p {
+h2, h1 {
   text-align: center;
   color: white;
 }
@@ -21,10 +21,26 @@ h2, h1, p {
 .myList {
   @include asideStyle();
   justify-content: center;
-  margin: 0 auto;
+  height: 70vh;
+  margin: 0 25%;
   width: 50%;
-  display: block;
+position: absolute;
   text-align: center;
+}
+
+.suggestion {
+  position:absolute;
+  margin-left: 78%;
+  margin-top: 30%;
+
+  &__text {
+    color: black;
+    size: 12px;
+    margin-button: 5px;
+  }
+  &__image {
+    height: 60px;
+  }
 }
 
 .completed {
@@ -66,16 +82,24 @@ h2, h1, p {
   background-color: orange;
   &:focus {
   outline: none;
-  border: none;
+  border-style: none;
   }
+
+  &:hover {
+    background-color: #1c1a1c;
+    color:orange;
+    border-style: outset;
+    border-color: orange;
+    border-width: 3px;
+}
 }
 
-.toggleRight {
+button.toggleRight {
   display: inline-block;
   grid-area: buttonRight;
   @include togglebutton;
 }
-.toggleLeft {
+button.toggleLeft {
   display: inline-block;
   grid-area: buttonLeft;
   background-color: red;
@@ -165,8 +189,8 @@ button.goal__add {
   font-size: 16px;
   outline: none;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all ease-in;
+  transition: all ease-in;
 }
 
 button.goal__add span  {
@@ -186,7 +210,7 @@ button.goal__add i {
 }
 
 button.goal__add:hover {
-  background-color: orange;
+  // background-color: orange;
 }
 
 button.goal__add:hover span,
@@ -197,12 +221,6 @@ button.goal__add.hover span {
 
   font-family: cursive;
   // font: 100% $font-title;
-
-  -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
-
 }
 
 button.goal__add:hover i,
