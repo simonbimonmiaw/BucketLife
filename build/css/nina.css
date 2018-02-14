@@ -6,8 +6,7 @@ html, body {
 
 body {
   max-width: 100%;
-  overflow-x: hidden;
-  background-color: #747271; }
+  overflow-x: hidden; }
 
 .completedText {
   grid-area: textAreaLeft; }
@@ -150,7 +149,7 @@ h4 {
   background-image: url("https://www.austinadventures.com/assets/4821652973_06a6c284c5.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
@@ -166,7 +165,7 @@ h4 {
   background-image: url("https://fthmb.tqn.com/4T3vgdT_7FFC5UxS-i_kaHZCOjI=/3864x2579/filters:no_upscale()/he-s-a-lone-rider-494210377-570e2cd13df78c7d9e5034a8.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
@@ -182,7 +181,7 @@ h4 {
   background-image: url("http://c7.alamy.com/zooms/a0bb28bed5ef44fea9c7110df22d2062/australia-new-south-wales-sydney-lane-cove-couple-driving-car-through-g3tgpw.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
@@ -198,7 +197,7 @@ h4 {
   background-image: url("https://fthmb.tqn.com/vTwek6MxlK6HxUyfjXGPdb1q-C8=/768x0/filters:no_upscale()/102635862-56a6e1d53df78cf77290ac3a.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
@@ -214,7 +213,7 @@ h4 {
   background-image: url("http://yourdream.s3.amazonaws.com/media/cache/49/81/49811164c1ec4dd5c196b05f36b50bef.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
