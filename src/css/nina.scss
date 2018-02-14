@@ -74,7 +74,7 @@ p {
   left: -600px;
   height: 590px;
   transition: left ease-in-out 0.3s;
-
+@include add-shadow();
   &__text {
     font-family: $title-font;
   }
@@ -99,6 +99,7 @@ p {
   position:  absolute;
   right: -600px;
   transition: right cubic-bezier (0, 0.07, 0.56, 0.92) 0.3s;
+  @include add-shadow();
 
   &__text {
     grid-area: textAreaRight;
