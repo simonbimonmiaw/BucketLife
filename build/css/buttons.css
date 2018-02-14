@@ -102,7 +102,7 @@ button.goal__add:active i {
   left: 18px; }
 
 /* add button */
-/* Close x button sign */
+/* Close x button sign  https://codepen.io/maneeshc/pen/pPxKQm  */
 .close-button {
   grid-area: textAreaRight;
   display: block;

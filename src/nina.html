@@ -18,14 +18,34 @@
 
 <body>
 	<header>
+
         <a class="logo" href="index.html">
             <img src="../build/images/logo.png" alt="placeholder">
         </a>
-		<nav>
-			<ul>
-				<li><a href="index.html" onmousedown="sound1.play()">Home</a></li>
-				<li><a href="ideas.html">Bucket List Ideas</a></li>
-			</ul>
+
+
+            <p id="tagline">You Only Live Once</p>
+        <nav>
+            <ul class="some-icons">
+
+                <a href="https://tinyurl.com/yc34swtb" target="blank">
+                <li><i class="fab fa-facebook-square "></i></li>
+                </a>
+
+                <a href="https://tinyurl.com/o3alr8t" target="blank">
+                <li><i class="fab fa-instagram"></i></li>
+                </a>
+
+
+                <a href="https://tinyurl.com/y7hwb974" target="blank">
+                <li><i class="fab fa-linkedin"></i></li>
+                </a>
+
+               <a href="https://tinyurl.com/y73e7hhm" target="blank">
+                <li><i class="fab fa-youtube"></i></li>
+                </a>
+            </ul>
+
 		</nav>
 	</header>
 
@@ -67,7 +87,7 @@
 		<h2 class="inspiration__text">Be inspired</h2>
 		<p class="inspiration__subText">Find new goals and simply add them to your list!</p></div>
 
-		<a v-on:click="toggleInspiration" class="close-button">
+		<a v-on:click="toggleInspiration" class="close-button"> <!--x button -->
 			<div class="in">
 				<div class="close-button-block"></div>
 				<div class="close-button-block"></div>
