@@ -6,7 +6,17 @@ ul, li { /* Reset ul and li */
   border: 0;
 }
 
+<<<<<<< HEAD
 .goals {
+=======
+
+
+
+.goals-list {
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+>>>>>>> origin/master
     font-family: $primary-font;
     width:650px;
     margin:auto;

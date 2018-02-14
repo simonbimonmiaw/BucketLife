@@ -1,13 +1,23 @@
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 html, body {
   /* Browser reset */
   margin: 0;
   padding: 0; }
 
 body {
+  background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #747271; }
+  background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .completedText {
   grid-area: textAreaLeft; }
@@ -20,10 +30,19 @@ h2, h1 {
   font-weight: lighter;
   margin-bottom: 10px; }
 
+h4 {
+  font-family: "Cantarell", sans-serif;
+  transform: rotate(90deg);
+  font-size: 50px;
+  padding: 0;
+  margin-top: -200px; }
+
+/*Text on toggle button*/
 p {
   font-family: "Cantarell", sans-serif;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 16px; }
 
 .myList {
   height: auto;
@@ -47,10 +66,11 @@ p {
   .suggestion__text {
     font-family: Seaweed Script, cursive;
     color: black;
-    size: 19px;
-    margin-bottom: 5px; }
+    size: 50%;
+    margin-bottom: 5px;
+    text-align: left; }
   .suggestion__image {
-    height: 60px; }
+    height: 50%; }
 
 .completed {
   height: auto;
@@ -59,7 +79,7 @@ p {
   display: grid;
   grid-template-columns: 600px 100px;
   grid-template-rows: auto;
-  grid-template-areas: "textAreaLeft buttonLeft" "completedGoals buttonLeft";
+  grid-template-areas: "textAreaLeft buttonLeft" "completedGoals buttonLeft";
   position: absolute;
   left: -600px;
   transition: left ease-in-out 0.3s; }
@@ -75,7 +95,7 @@ p {
   display: grid;
   grid-template-columns: 100px 600px;
   grid-template-rows: auto;
-  grid-template-areas: "buttonRight textAreaRight" "buttonRight ideaGoal";
+  grid-template-areas: "buttonRight textAreaRight" "buttonRight ideaGoal";
   position: absolute;
   right: -600px;
   transition: right ease-in-out 0.3s; }
@@ -85,47 +105,9 @@ p {
   .inspiration__subText {
     grid-area: textAreaRight; }
 
-h4 {
-  font-family: "Cantarell", sans-serif; }
-
 .inspiration.hide {
   position: absolute;
   right: 50px; }
-
-button.toggleRight {
-  display: inline-block;
-  grid-area: buttonRight;
-  background-color: orange; }
-  button.toggleRight:focus {
-    outline: none;
-    border-style: none; }
-  button.toggleRight:hover {
-    background-color: #1c1a1c;
-    color: orange;
-    border-style: outset;
-    border-color: orange;
-    border-width: 3px; }
-
-button.toggleLeft {
-  display: inline-block;
-  grid-area: buttonLeft;
-  background-color: red;
-  background-color: orange; }
-  button.toggleLeft:focus {
-    outline: none;
-    border-style: none; }
-  button.toggleLeft:hover {
-    background-color: #1c1a1c;
-    color: orange;
-    border-style: outset;
-    border-color: orange;
-    border-width: 3px; }
-
-h4 {
-  transform: rotate(90deg);
-  font-size: 50px;
-  padding: 0;
-  margin-top: -200px; }
 
 .flexContainerLeft {
   grid-area: completedGoals;
@@ -150,132 +132,93 @@ h4 {
   background-image: url("https://www.austinadventures.com/assets/4821652973_06a6c284c5.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .usa:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .usa:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .ride {
   background-image: url("https://fthmb.tqn.com/4T3vgdT_7FFC5UxS-i_kaHZCOjI=/3864x2579/filters:no_upscale()/he-s-a-lone-rider-494210377-570e2cd13df78c7d9e5034a8.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .ride:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .ride:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .drive {
   background-image: url("http://c7.alamy.com/zooms/a0bb28bed5ef44fea9c7110df22d2062/australia-new-south-wales-sydney-lane-cove-couple-driving-car-through-g3tgpw.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .drive:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .drive:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .paintball {
   background-image: url("https://fthmb.tqn.com/vTwek6MxlK6HxUyfjXGPdb1q-C8=/768x0/filters:no_upscale()/102635862-56a6e1d53df78cf77290ac3a.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .paintball:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .paintball:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .swim {
   background-image: url("http://yourdream.s3.amazonaws.com/media/cache/49/81/49811164c1ec4dd5c196b05f36b50bef.jpg");
   border-color: black;
   border: solid;
-  border-width: 4px;
+  border-width: 2px;
   background-size: cover;
   width: 250px;
   height: 100px;
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .swim:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
-
-/* add button */
-button.goal__add {
-  border: none;
-  background-color: black;
-  border-radius: 25px;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 8px 30px;
-  display: inline-block;
-  margin: 22px 30px;
-  text-transform: none;
-  line-height: 1.5em;
-  font-size: 16px;
-  outline: none;
-  position: relative;
-  -webkit-transition: all ease-in;
-  transition: all ease-in; }
-
-button.goal__add span {
-  display: inline-block;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-
-button.goal__add i {
-  font-size: 19px;
-  left: 22px;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-
-button.goal__add:hover span,
-button.goal__add.hover span {
-  -webkit-transform: translate3d(10px, 0px, 0px);
-  /* Moves the text 10px to the right on hover */
-  transform: translate3d(10px, 0px, 0px);
-  /* Moves the text 10px to the right on hover */
-  opacity: 1;
-  font-family: Seaweed Script, cursive;
-  text-transform: none; }
-
-button.goal__add:hover i,
-button.goal__add.hover i {
-  opacity: 1; }
-
-button.goal__add:active span {
-  -webkit-transform: translate3d(14px, 0px, 0px);
-  transform: translate3d(14px, 0px, 0px); }
-
-button.goal__add:active i {
-  left: 18px; }
-
-/* add button */
+  .swim:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }

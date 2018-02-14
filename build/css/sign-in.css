@@ -3,6 +3,15 @@ html, body {
   margin: 0;
   padding: 0; }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .logo {
   width: 50%;
   display: -webkit-box;
@@ -10,13 +19,6 @@ html, body {
   display: flex;
   margin: auto;
   padding: 10px; }
-
-.sign-in {
-  background: url(../images/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
 
 .wrapper {
   color: #fafafa;
@@ -77,4 +79,4 @@ form {
   width: 100%; }
 
 .button:hover {
-  background: #286D8F; }
+  background: #1c1a1c; }

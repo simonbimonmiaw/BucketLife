@@ -6,12 +6,24 @@ $primary-font: 'Cantarell', sans-serif;
 $font-color: red;
 $detail-font: Seaweed Script, cursive;
 $primary-color: #FF9600;
-$secondary-color: #286D8F;
+$secondary-color: rgb(28, 26, 28);
+
 
 html, body { /* Browser reset */
     margin:0;
     padding:0;
 }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 @mixin add-shadow() {
 -webkit-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
