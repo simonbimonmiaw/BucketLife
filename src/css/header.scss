@@ -54,11 +54,30 @@ header {
     .some-icons { 
     
     grid-area: some;
+    color: #FFFFFF;
+    font-size: 25px;    
+    
+    }
+    
+    .some-icons a { 
+    
+    color: #FFFFFF;
     
     }
     
     .icons { 
     width: 20px;
+    
+    }
+    
+    li:hover { 
+    
+	  	color: $secondary-color;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;    
     
     }
     
