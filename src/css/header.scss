@@ -1,6 +1,6 @@
-@import 'global';
+@import '_global';
 
-@mixin box-shadow($header-shadow) { // 
+@mixin box-shadow($header-shadow) { //
     -webkit-box-shadow: $header-shadow;
     -moz-box-shadow: $header-shadow;
     -ms-box-shadow: $header-shadow;
@@ -12,63 +12,53 @@ header {
     background-color: rgba(255, 148, 0, 0.6);
     // Layout designed by CSS grid system
     display: grid;
-    grid-template-columns: 230px 1100px 300px;
+    grid-template-columns: 250px auto 300px;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "logo tagline some";    
+    grid-template-areas:
+    "logo tagline some";
     margin-bottom:50px;
-    @include box-shadow(0px 4px 5px -1px rgba(0,0,0,0.41)); // Shadow on header 
-    
-.logo {
-        
-    grid-area: logo;
-    padding: 20px 40px;
+    @include box-shadow(0px 4px 5px -1px rgba(0,0,0,0.41)); // Shadow on header
+
+    .logo {
+      grid-area: logo;
+      padding: 20px 40px;
     }
-    
-    
-#tagline { 
-    grid-area: tagline;
-    font-family: $detail-font;
-    color: #FFFFFF;
-    margin-top: 30px;
-    margin-left: 30px;    
-       
+
+    #tagline {
+      grid-area: tagline;
+      font-family: $detail-font;
+      margin-top: 32px;
+      margin-left: 30px;
+      text-align: left;
     }
-    
-li { 
-    
-    list-style-type: none;
-    display: inline;
-    padding: 10px;
-    margin: auto;
-        
-        
-&:hover { 
-    
-    color: $secondary-color;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;    
-    
+
+    li {
+      list-style-type: none;
+      display: inline;
+      padding: 5px;
+      margin: auto;
+
+
     }
-        
-    
+
+    .soMe-icons {
+      grid-area: some;
+      color: #FFFFFF;
+      font-size: 25px;
+      text-align: right;
+      margin-right: 15%;
+
     }
-    
-    .some-icons { 
-    
-    grid-area: some;
-    color: #FFFFFF;
-    font-size: 25px;    
-    
+    .soMe-icons a {
+      color: #FFFFFF;
+      text-decoration: none;
+      &:hover {
+        color: $secondary-color;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+        }
     }
-    
-    .some-icons a { 
-    
-    color: #FFFFFF;
-    
-    }
-      
 }
