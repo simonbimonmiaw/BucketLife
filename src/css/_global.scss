@@ -13,6 +13,17 @@ html, body { /* Browser reset */
     padding:0;
 }
 
+body { 
+
+  background: url(../../build/images/bgmain.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
 @mixin add-shadow() {
 -webkit-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
 -moz-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);

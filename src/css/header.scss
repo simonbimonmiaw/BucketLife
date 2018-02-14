@@ -26,33 +26,12 @@ header {
         flex-direction: row;
         align-self: center;
         padding: 20px;
-        font-family:$primary-font;
-        font-size: $primary-font-size;
     }
     
-    ul {
-        list-style-type: none; // Removes bullets
-        display: flex;
-        float: right;
+    #tagline { 
+    
+    font-family: $detail-font
+    
     }
     
-    li {
-        display: inline; // Links on same line
-        
-        a {
-            color: #000;
-            text-decoration: none;
-            margin-right:50px;
-            
-        }
-
-        a:hover {
-        color: rgba(255,255,255,1.00);
-		-o-transition:.3s;
-		-ms-transition:.3s;
-		-moz-transition:.3s;
-		-webkit-transition:.3s;	
-		transition:.3s;
-        }
-    }
 }
