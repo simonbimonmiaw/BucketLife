@@ -5,6 +5,13 @@ html, body {
   padding: 0; }
 
 body {
+  background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
   max-width: 100%;
   overflow-x: hidden; }
 
@@ -22,7 +29,8 @@ h2, h1 {
 p {
   font-family: "Cantarell", sans-serif;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 16px; }
 
 .myList {
   height: auto;
@@ -46,10 +54,11 @@ p {
   .suggestion__text {
     font-family: Seaweed Script, cursive;
     color: black;
-    size: 19px;
-    margin-bottom: 5px; }
+    size: 50%;
+    margin-bottom: 5px;
+    text-align: left; }
   .suggestion__image {
-    height: 60px; }
+    height: 50%; }
 
 .completed {
   height: auto;
@@ -225,7 +234,7 @@ h4 {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
 
-/* add button */
+/* add button on inspiration images */
 button.goal__add {
   border: none;
   background-color: black;
