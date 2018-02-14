@@ -3,6 +3,15 @@ html, body {
   margin: 0;
   padding: 0; }
 
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .logo {
   width: 50%;
   display: -webkit-box;
@@ -24,7 +33,7 @@ html, body {
   margin-top: 200px;
   padding: 0 1em 5em;
   max-width: 370px;
-  font-family: Maven Pro, sans-serif;
+  font-family: "Cantarell", sans-serif;
   -webkit-box-shadow: 0px 2px 26px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 2px 26px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 26px 2px rgba(0, 0, 0, 0.75); }
@@ -66,7 +75,7 @@ form {
   color: #fff;
   cursor: pointer;
   height: 50px;
-  font-family: Maven Pro, sans-serif;
+  font-family: "Cantarell", sans-serif;
   font-size: 1.2em;
   letter-spacing: 0.05em;
   text-align: center;
@@ -77,4 +86,4 @@ form {
   width: 100%; }
 
 .button:hover {
-  background: #286D8F; }
+  background: #1c1a1c; }

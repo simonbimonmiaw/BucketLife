@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../build/css/buttons.css">
 <link rel="stylesheet" type="text/css" href="../build/css/nina.css">
 <link rel="stylesheet" type="text/css" href="../build/css/_global.css">
 <link rel="stylesheet" type="text/css" href="../build/css/goals-list.css">
 <link rel="stylesheet" type="text/css" href="../build/css/animate.css">
 <link rel="stylesheet" type="text/css" href="../build/css/header.css">
 <link rel="stylesheet" type="text/css" href="../build/css/add-goal.css">
-<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Flamenco|Montserrat|Oregano" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Limelight|Cabin|Cantarell|Passion+One:700|Seaweed+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Cantarell|Passion+One:700|Seaweed+Script" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <title>BucketLife - You Only Live Once</title>
 <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js"></script> -->
@@ -67,18 +66,31 @@
 <div class="inspiration__text">
 		<h2 class="inspiration__text">Be inspired</h2>
 		<p class="inspiration__subText">Find new goals and simply add them to your list!</p></div>
+
+		<a v-on:click="toggleInspiration" class="close-button">
+			<div class="in">
+				<div class="close-button-block"></div>
+				<div class="close-button-block"></div>
+			</div>
+			<div class="out">
+				<div class="close-button-block"></div>
+				<div class="close-button-block"></div>
+			</div>
+		</a>
+
+
 		<section class="flexContainerRight">
 			<article :class="item.name" v-for="item in inspiration">
 			     <h3 class="goal__tagline" > {{ item.tagline }}</h3>
 			     <button class="goal__add" v-on:click="add"><span class="add--arrow">Add me</span><i class="ion-android-arrow-forward "></i></button>
-			 </article>
+			</article>
 		</section>
 	</aside>
 
 </main>
 
 <script type="text/javascript" src="../src/js/script.js"></script>
-<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+
 <!-- <script src="../src/js/script-dist.js"></script> -->
 <!--this script is intefering with the script.js document -->
 
