@@ -1,0 +1,40 @@
+/*
+Error: Invalid CSS after "$checkboxSize:": expected expression (e.g. 1px, bold), was ";"
+        on line 4 of /Users/simonmacbook/OneDrive - EFIF/Multimediedesign/Interaktion/Bucketlife/BucketLife/src/css/goals-list.scss
+
+1: @import 'global';
+2: 
+3: $shadow: box-shadow(0px 0px 18px -1px rgba(0,0,0,0.42));
+4: $checkboxSize:;
+5: 
+6: @mixin box-shadow($shadow) {
+7:     -webkit-box-shadow: $shadow;
+8:     -moz-box-shadow: $shadow;
+9:     -ms-box-shadow: $shadow;
+
+Backtrace:
+/Users/simonmacbook/OneDrive - EFIF/Multimediedesign/Interaktion/Bucketlife/BucketLife/src/css/goals-list.scss:4
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/script/lexer.rb:229:in `expected!'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/script/parser.rb:710:in `assert_expr'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/script/parser.rb:75:in `parse'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/scss/parser.rb:1063:in `sass_script'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/scss/parser.rb:630:in `variable'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:400:in `run'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/rubygems/gems/sass-3.4.24/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/bin/sass:34:in `load'
+/Applications/Adobe Dreamweaver CC 2018/Adobe Dreamweaver CC 2018.app/Contents/Resources/gems/bin/sass:34:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$checkboxSize:\": expected expression (e.g. 1px, bold), was \";\"\A         on line 4 of /Users/simonmacbook/OneDrive - EFIF/Multimediedesign/Interaktion/Bucketlife/BucketLife/src/css/goals-list.scss\A \A 1: @import 'global';\A 2: \A 3: $shadow: box-shadow(0px 0px 18px -1px rgba(0,0,0,0.42));\A 4: $checkboxSize:;\A 5: \A 6: @mixin box-shadow($shadow) {\A 7:     -webkit-box-shadow: $shadow;\A 8:     -moz-box-shadow: $shadow;\A 9:     -ms-box-shadow: $shadow;"; }
