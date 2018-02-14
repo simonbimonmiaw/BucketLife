@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 <title>BucketLife</title>
 <link href="https://fonts.googleapis.com/css?family=Handlee|Maven+Pro" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="../build/css/global.css">
 <link rel="stylesheet" type="text/css" href="../build/css/animate.css">
-<link rel="stylesheet" type="text/css" href="../build/css/add-goal.css">
 <link rel="stylesheet" type="text/css" href="../build/css/goals-list.css">
 <link rel="stylesheet" type="text/css" href="../build/css/header.css">
 <script src="js/audio.js"></script>
@@ -20,7 +18,6 @@
 <body>
 <main id="app">
 	<header>
-       
         <a class="logo" href="index.html">
             <img src="../build/images/logo.png" alt="placeholder">
         </a>
@@ -50,25 +47,31 @@
 
 		</nav>    
 	</header>
-	<section class="container">
-		<form class="goals" v-on:submit.prevent="addGoal()">
-		  <input ref="my_input" class="goal" maxlength="35" type="text" placeholder="+ Add a new goal">
-		  <button type="submit" class="add">Add</button>
-		</form>
-	</section>
-	<section class="goals-list">
-		<form>
-            <ol>
-                <li class="animated fadeInDown" v-for="(item, index) in goals" v-bind:class="{ done: completeGoal }" >{{ item }}
-                    <input type="checkbox" class="goal-options" v-model="completeGoal" :value="item" v-on:click=>
-                    <button class="goal-options" v-on:click.prevent="deleteGoal(index)">X</button>
-                </li>
-            </ol>
-		</form>
-	</section>
+      <section class="goals">
+          <section class="panel">
+
+            <input type="text" placeholder="+Add new goal" autofocus class="text-input" v-model="newGoal" v-on:keyup.enter="addGoal"> 
+            <button v-on:click="addGoal">Add</button>
+
+          </section>
+
+          <!-- Unordered list for holding our goal items -->
+          <ul class="list">
+
+            <li class="animated fadeInDown" v-for="goal in goalList" v-bind:class="{done: goal.checked}">
+
+              <input type="checkbox" class="checkbox" v-model="goal.checked">
+
+              <label for="checkbox">{{ goal.text }}</label>
+
+              <button class="delete" v-on:click="removeGoal(goal)">X</button>
+
+            </li>
+
+          </ul>
+      </section>
 </main>
 
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/script-dist.js"></script>
 
 </body>

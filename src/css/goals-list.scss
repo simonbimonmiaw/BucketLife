@@ -1,22 +1,14 @@
 @import 'global';
 
-$shadow: box-shadow(0px 0px 18px -1px rgba(0,0,0,0.42));
-$checkboxSize:;
-
-@mixin box-shadow($shadow) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    -ms-box-shadow: $shadow;
-    box-shadow: $shadow;
+ul, li { /* Reset ul and li */
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-@mixin ($checkboxSize) {
-    -ms-transform: scale(2); /* IE */
-    -moz-transform: scale(2); /* FF */
-    -webkit-transform: scale(2); /* Safari and Chrome */
-    -o-transform: scale(2); /* Opera */
-}
-
+<<<<<<< HEAD
+.goals {
+=======
 
 
 
@@ -24,47 +16,81 @@ $checkboxSize:;
     display: flex;
     justify-content: center;
     margin-top:50px;
+>>>>>>> origin/master
     font-family: $primary-font;
-    font-size: $primary-font-size + 6; // Adds X to primary font size
+    width:650px;
+    margin:auto;
+      
+    .panel {          
+        display: flex;/* 
+        Distribute space evenly between the contents*/
+        justify-content: space-between;
+        border-bottom: 1px solid #efefef;
+        padding: 10px;
+        background-color: $primary-color;
+    }
     
-    form {
-        background-color:$primary-color;
-        padding:50px 90px;
-        @include box-shadow(0px 0px 18px -1px rgba(0,0,0,0.42)); // Shadow on form
-        min-width:650px;
+    li {
+        list-style-type: none;
+        border-bottom: 1px solid #efefef;
+        padding: 10px;
+    }
+    
+    .text-input {
+        border: 1px solid #dedede;
+        padding-left: 10px;
+        width: 70%;
+        height: 35px;
+        color: #555;
+    }
+    
+    button {
+        outline: 0;
+        width: 100px;
+        height: 38px;
+        cursor: pointer;
+        font-size: 12px;
+        
+        .delete {
+            max-width:10px;
+        }
+    }
+    
+    .list {
         
         li {
-            margin-bottom:30px;
+            background-color: $secondary-color;
             
-            .goal-options {
-                background:none;
-                border: none;
-                float:right;
-                padding:0;
+            .delete {
+                background-color: transparent;
+                border: 1px solid $secondary-color;
+                color: #ddd;
+                /* Hide the delete button by default*/
+                visibility: hidden;
+                font-size: 20px;
+                font-weight: bold;    
             }
-            
-            button {
-                font-size:25px;
-            }
-            
-            :hover {
-                color:red;
-            }
-            
-            input[type=checkbox] {
-                -ms-transform: scale(2); /* IE */
-                -moz-transform: scale(2); /* FF */
-                -webkit-transform: scale(2); /* Safari and Chrome */
-                -o-transform: scale(2); /* Opera */
-                padding: 0;
-                margin-top: 8px;
-                margin-left: 20px;
-            }
+        } 
+        
+        li:hover > .delete {
+          /* Show the delete button when hovering over each list item */
+          visibility: visible;
         }
         
-        .done {
-            color: #d9d9d9;
-            text-decoration: line-through;
+        label {
+          padding-right: 10px;
+          display: inline-block;
+          width: 70%;
+          font-size: 18px;
+          line-height: 16px;
+          color: #fcfcfc;
+          z-index: 2;
+          overflow: hidden;
+        }
+        
+        li.done label {
+          color: #d9d9d9;
+          text-decoration: line-through;
         }
     }
 }
