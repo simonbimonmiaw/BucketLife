@@ -1,12 +1,20 @@
-$title-font: Handlee, cursive;
-$title-font-size: 100px;
+$title-font: 'Passion One', cursive;
+$title-weight: lighter;
+$title-font-size: 60px;
 $primary-font-size: 16px;
-$primary-font: Maven Pro, sans-serif;
+$primary-font: 'Cantarell', sans-serif;
 $font-color: red;
+$detail-font: Seaweed Script, cursive;
 $primary-color: #FF9600;
 $secondary-color: #286D8F;
 
 html, body { /* Browser reset */
     margin:0;
     padding:0;
+}
+
+@mixin add-shadow() {
+-webkit-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
+-moz-box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
+box-shadow: -1px 2px 5px 1px rgba(0,0,0,0.32);
 }

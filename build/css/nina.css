@@ -1,17 +1,29 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+html, body {
+  /* Browser reset */
+  margin: 0;
+  padding: 0; }
+
 body {
   max-width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #747271; }
 
 .completedText {
   grid-area: textAreaLeft; }
 
-.inspiredText {
-  grid-area: textAreaRight; }
-
 h2, h1 {
   text-align: center;
-  color: white; }
+  color: white;
+  font-size: 60px;
+  font-family: "Passion One", cursive;
+  font-weight: lighter;
+  margin-bottom: 10px; }
+
+p {
+  font-family: "Cantarell", sans-serif;
+  color: white;
+  text-align: center; }
 
 .myList {
   height: auto;
@@ -22,16 +34,21 @@ h2, h1 {
   margin: 0 25%;
   width: 50%;
   position: absolute;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.32);
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.32); }
 
 .suggestion {
   position: absolute;
   margin-left: 78%;
-  margin-top: 30%; }
+  margin-top: 20%;
+  text-align: left; }
   .suggestion__text {
+    font-family: Seaweed Script, cursive;
     color: black;
-    size: 12px;
-    margin-button: 5px; }
+    size: 19px;
+    margin-bottom: 5px; }
   .suggestion__image {
     height: 60px; }
 
@@ -62,6 +79,14 @@ h2, h1 {
   position: absolute;
   right: -600px;
   transition: right ease-in-out 0.3s; }
+  .inspiration__text {
+    grid-area: textAreaRight;
+    font-family: "Passion One", cursive; }
+  .inspiration__subText {
+    grid-area: textAreaRight; }
+
+h4 {
+  font-family: "Cantarell", sans-serif; }
 
 .inspiration.hide {
   position: absolute;
@@ -115,6 +140,11 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px; }
+
+.goal__tagline {
+  font-family: "Cantarell", sans-serif;
+  color: black;
+  font-size: 18px; }
 
 .usa {
   background-image: url("https://www.austinadventures.com/assets/4821652973_06a6c284c5.jpg");
@@ -206,7 +236,7 @@ button.goal__add {
   padding: 8px 30px;
   display: inline-block;
   margin: 22px 30px;
-  text-transform: uppercase;
+  text-transform: none;
   line-height: 1.5em;
   font-size: 16px;
   outline: none;
@@ -234,7 +264,8 @@ button.goal__add.hover span {
   transform: translate3d(10px, 0px, 0px);
   /* Moves the text 10px to the right on hover */
   opacity: 1;
-  font-family: cursive; }
+  font-family: Seaweed Script, cursive;
+  text-transform: none; }
 
 button.goal__add:hover i,
 button.goal__add.hover i {

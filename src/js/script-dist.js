@@ -6,7 +6,7 @@ var bucketList = new Vue({
     ],
     completeGoal: []
   },
-    
+
   methods: {
     addGoal() {
       var input = this.$refs.my_input.value;
