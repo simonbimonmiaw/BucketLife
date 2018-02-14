@@ -11,9 +11,9 @@ button {
 @mixin togglebutton {
   background-color: $primary-color;
   &:focus {
-  outline: none;
-  border-color: black;
-  border-width: 3px;
+    outline: none;
+    border-color: black;
+    border-width: 3px;
   }
 
   &:hover {
@@ -28,10 +28,17 @@ button.toggleRight {
   grid-area: buttonRight;
   @include togglebutton;
 }
+.toggleRight__title{
+  margin-top: -150px;
+}
 button.toggleLeft {
   display: inline-block;
   grid-area: buttonLeft;
   @include togglebutton;
+}
+
+.toggleLeft__title {
+  margin-top: -150px;
 }
 /*** Toggle buttons end***/
 
@@ -100,7 +107,7 @@ button.goal__add:active i {
 /* add button */
 
 
-/* Close x button sign  https://codepen.io/maneeshc/pen/pPxKQm  */ 
+/* Close x button sign  https://codepen.io/maneeshc/pen/pPxKQm  */
 $button-size: 40px;
 $close-width: ($button-size / 10);
 

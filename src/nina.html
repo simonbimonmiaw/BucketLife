@@ -52,15 +52,24 @@
 
 	<main id="app">
 		<aside class="completed">
-			<button v-on:click="toggleInspiration" class="toggleleft"><h4>Completed goals</h4></button>
-			<h2 class="completedText">You completed these goals. Yay!</h2>
+			<div class="completed__text">
+				<h2 class="completed__text">Completed goals</h2>
+				<p class="completed__subText">You completed these goals. Yay!</p>
+			</div>
 			<section class="flexContainerLeft">
-				something here
+				<ul>
+					<li> hey</li>
+					<li> hey</li>
+					<li> hey</li>
+					<li> hey</li>
+					<li> hey</li>
+				</u>
 			</section>
+			<button v-on:click="toggleInspiration" class="toggleLeft"><h4 class="toggleLeft__title">Completed</h4></button>
 		</aside>
 
-		<aside class="myList">
-<h1>My bucket list</h1>
+<aside class="myList">
+	<h1>My bucket list</h1>
 				<!-- <form class="goals" v-on:submit.prevent="addGoal()">
 					<input ref="my_input" class="goal" maxlength="35" type="text" placeholder="+ Add a new goal">
 					<button type="submit" class="add">Add</button>
@@ -75,19 +84,19 @@
 										</li>
 								</ol>
 				</form> -->
-		</aside>
+</aside>
 
-	<div class="suggestion">
-		<p class="suggestion__text">Check out<br>some ideas!</p>
-		<img class="suggestion__image" src="../build/images/arrow.svg" alt="Arrow">
-	</div>
+<div class="suggestion">
+	<p class="suggestion__text">Check out<br>some ideas!</p>
+	<img class="suggestion__image" src="../build/images/arrow.svg" alt="Arrow">
+</div>
 
 	<aside class="inspiration">
-		<button v-on:click="toggleInspiration" class="toggleRight"><h4>Inspiration</h4></button>
-<div class="inspiration__text">
+		<button v-on:click="toggleInspiration" class="toggleRight"><h4 class="toggleRight__title">Inspiration</h4></button>
+		<div class="inspiration__text">
 		<h2 class="inspiration__text">Be inspired</h2>
-		<p class="inspiration__subText">Find new goals and simply add them to your list!</p></div>
-
+		<p class="inspiration__subText">Find new goals and simply add them to your list!</p>
+	</div>
 		<a v-on:click="toggleInspiration" class="close-button"> <!--x button -->
 			<div class="in">
 				<div class="close-button-block"></div>

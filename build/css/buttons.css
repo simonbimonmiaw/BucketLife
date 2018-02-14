@@ -34,6 +34,9 @@ button.toggleRight {
     border-style: outset;
     border-color: #FF9600; }
 
+.toggleRight__title {
+  margin-top: -150px; }
+
 button.toggleLeft {
   display: inline-block;
   grid-area: buttonLeft;
@@ -47,6 +50,9 @@ button.toggleLeft {
     color: #FF9600;
     border-style: outset;
     border-color: #FF9600; }
+
+.toggleLeft__title {
+  margin-top: -150px; }
 
 /*** Toggle buttons end***/
 /* add button on inspiration images */

@@ -6,8 +6,7 @@ $primary-font: 'Cantarell', sans-serif;
 $font-color: red;
 $detail-font: Seaweed Script, cursive;
 $primary-color: #FF9600;
-$secondary-color: rgb(28, 26, 28);
-
+$secondary-color: #1c1a1c;
 
 html, body { /* Browser reset */
     margin:0;
@@ -22,6 +21,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 
 
