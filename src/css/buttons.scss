@@ -1,7 +1,43 @@
-/* add button on inspiration images */
 @import "_global.scss";
 
+button {
+  border-width: 0;
+  border-style: none;
+  border-color: buttonface;
+  border-image: none;
+}
+
+/*** Toggle buttons ***/
+@mixin togglebutton {
+  background-color: $primary-color;
+  &:focus {
+  outline: none;
+  border-color: black;
+  border-width: 3px;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+    color:$primary-color;
+    border-style: outset;
+    border-color: $primary-color;
+  }
+}
+button.toggleRight {
+  display: inline-block;
+  grid-area: buttonRight;
+  @include togglebutton;
+}
+button.toggleLeft {
+  display: inline-block;
+  grid-area: buttonLeft;
+  @include togglebutton;
+}
+/*** Toggle buttons end***/
+
+/* add button on inspiration images */
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
 button.goal__add {
   border: none;
   background-color: black;
@@ -13,7 +49,6 @@ button.goal__add {
   margin: 22px 30px;
   text-transform: none;
   line-height: 1.5em;
-  // font-weight: 400;
   font-size: 16px;
   outline: none;
   position: relative;

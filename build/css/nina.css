@@ -4,15 +4,13 @@ html, body {
   padding: 0; }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
-body {
-  max-width: 100%;
-  overflow-x: hidden; }
 
 .completedText {
   grid-area: textAreaLeft; }
@@ -25,6 +23,14 @@ h2, h1 {
   font-weight: lighter;
   margin-bottom: 10px; }
 
+h4 {
+  font-family: "Cantarell", sans-serif;
+  transform: rotate(90deg);
+  font-size: 50px;
+  padding: 0;
+  margin-top: -200px; }
+
+/*Text on toggle button*/
 p {
   font-family: "Cantarell", sans-serif;
   color: white;
@@ -92,47 +98,9 @@ p {
   .inspiration__subText {
     grid-area: textAreaRight; }
 
-h4 {
-  font-family: "Cantarell", sans-serif; }
-
 .inspiration.hide {
   position: absolute;
   right: 50px; }
-
-button.toggleRight {
-  display: inline-block;
-  grid-area: buttonRight;
-  background-color: orange; }
-  button.toggleRight:focus {
-    outline: none;
-    border-style: none; }
-  button.toggleRight:hover {
-    background-color: #1c1a1c;
-    color: orange;
-    border-style: outset;
-    border-color: orange;
-    border-width: 3px; }
-
-button.toggleLeft {
-  display: inline-block;
-  grid-area: buttonLeft;
-  background-color: red;
-  background-color: orange; }
-  button.toggleLeft:focus {
-    outline: none;
-    border-style: none; }
-  button.toggleLeft:hover {
-    background-color: #1c1a1c;
-    color: orange;
-    border-style: outset;
-    border-color: orange;
-    border-width: 3px; }
-
-h4 {
-  transform: rotate(90deg);
-  font-size: 50px;
-  padding: 0;
-  margin-top: -200px; }
 
 .flexContainerLeft {
   grid-area: completedGoals;
@@ -164,10 +132,13 @@ h4 {
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .usa:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .usa:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .ride {
   background-image: url("https://fthmb.tqn.com/4T3vgdT_7FFC5UxS-i_kaHZCOjI=/3864x2579/filters:no_upscale()/he-s-a-lone-rider-494210377-570e2cd13df78c7d9e5034a8.jpg");
@@ -180,10 +151,13 @@ h4 {
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .ride:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .ride:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .drive {
   background-image: url("http://c7.alamy.com/zooms/a0bb28bed5ef44fea9c7110df22d2062/australia-new-south-wales-sydney-lane-cove-couple-driving-car-through-g3tgpw.jpg");
@@ -196,10 +170,13 @@ h4 {
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .drive:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .drive:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .paintball {
   background-image: url("https://fthmb.tqn.com/vTwek6MxlK6HxUyfjXGPdb1q-C8=/768x0/filters:no_upscale()/102635862-56a6e1d53df78cf77290ac3a.jpg");
@@ -212,10 +189,13 @@ h4 {
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .paintball:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .paintball:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
 
 .swim {
   background-image: url("http://yourdream.s3.amazonaws.com/media/cache/49/81/49811164c1ec4dd5c196b05f36b50bef.jpg");
@@ -228,7 +208,10 @@ h4 {
   margin: 15px 5px;
   text-align: center;
   border-radius: 5px; }
-  .swim:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); }
+  .swim:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }

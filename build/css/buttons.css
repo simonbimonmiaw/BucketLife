@@ -1,4 +1,3 @@
-/* add button on inspiration images */
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 html, body {
   /* Browser reset */
@@ -6,12 +5,51 @@ html, body {
   padding: 0; }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   background: url(../../build/images/bgmain.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
+button {
+  border-width: 0;
+  border-style: none;
+  border-color: buttonface;
+  border-image: none; }
+
+/*** Toggle buttons ***/
+button.toggleRight {
+  display: inline-block;
+  grid-area: buttonRight;
+  background-color: #FF9600; }
+  button.toggleRight:focus {
+    outline: none;
+    border-color: black;
+    border-width: 3px; }
+  button.toggleRight:hover {
+    background-color: #1c1a1c;
+    color: #FF9600;
+    border-style: outset;
+    border-color: #FF9600; }
+
+button.toggleLeft {
+  display: inline-block;
+  grid-area: buttonLeft;
+  background-color: #FF9600; }
+  button.toggleLeft:focus {
+    outline: none;
+    border-color: black;
+    border-width: 3px; }
+  button.toggleLeft:hover {
+    background-color: #1c1a1c;
+    color: #FF9600;
+    border-style: outset;
+    border-color: #FF9600; }
+
+/*** Toggle buttons end***/
+/* add button on inspiration images */
 button.goal__add {
   border: none;
   background-color: black;
