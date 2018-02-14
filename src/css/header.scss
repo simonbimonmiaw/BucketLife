@@ -9,28 +9,56 @@
 
 
 header {
-    background-color:$primary-color;
-    display: flex;
+    background-color: rgba(255, 148, 0, 0.6);
+    display: grid;
+    grid-template-columns: 230px 1100px 300px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo tagline some";    
     margin-bottom:50px;
     @include box-shadow(0px 4px 5px -1px rgba(0,0,0,0.41)); // Shadow on header 
 
     
     .logo {
         
-        flex-direction: row;
-        padding: 20px 10px;
+       grid-area: logo;
+        padding: 20px 40px;
     }
     
     
     nav {
-        flex-direction: row;
+        
         align-self: center;
-        padding: 20px;
+        padding: 10px;
     }
     
     #tagline { 
+    grid-area: tagline;
+    font-family: $detail-font;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 30px;    
+       
+    }
     
-    font-family: $detail-font
+    li { 
+    
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    margin: auto;
+        
+    
+    }
+    
+    .some-icons { 
+    
+    grid-area: some;
+    
+    }
+    
+    .icons { 
+    width: 20px;
     
     }
     
