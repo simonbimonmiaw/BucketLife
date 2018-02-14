@@ -10,6 +10,7 @@
 
 header {
     background-color: rgba(255, 148, 0, 0.6);
+    // Layout designed by CSS grid system
     display: grid;
     grid-template-columns: 230px 1100px 300px;
     grid-template-rows: auto;
@@ -17,22 +18,15 @@ header {
     "logo tagline some";    
     margin-bottom:50px;
     @include box-shadow(0px 4px 5px -1px rgba(0,0,0,0.41)); // Shadow on header 
-
     
-    .logo {
+.logo {
         
-       grid-area: logo;
-        padding: 20px 40px;
+    grid-area: logo;
+    padding: 20px 40px;
     }
     
     
-    nav {
-        
-        align-self: center;
-        padding: 10px;
-    }
-    
-    #tagline { 
+#tagline { 
     grid-area: tagline;
     font-family: $detail-font;
     color: #FFFFFF;
@@ -41,12 +35,24 @@ header {
        
     }
     
-    li { 
+li { 
     
     list-style-type: none;
     display: inline;
     padding: 10px;
     margin: auto;
+        
+        
+&:hover { 
+    
+    color: $secondary-color;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;    
+    
+    }
         
     
     }
@@ -64,21 +70,5 @@ header {
     color: #FFFFFF;
     
     }
-    
-    .icons { 
-    width: 20px;
-    
-    }
-    
-    li:hover { 
-    
-	  	color: $secondary-color;
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;    
-    
-    }
-    
+      
 }
