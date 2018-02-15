@@ -10,47 +10,48 @@
 <script src="js/audio.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script defer src="js/fontawesome-all.js"></script>
-<script defer src="js/jquery.tubular.1.0.js"></script> 
-<script defer src="js/tubular.js"></script> 
-    
+<script defer src="js/jquery.tubular.1.0.js"></script>
+<script defer src="js/tubular.js"></script>
+
 </head>
 
 <body>
 <main id="app">
-	<header>
-        <a class="logo" href="index.html">
-            <img src="../build/images/logo.png" alt="placeholder">
-        </a>
-		
-			
-            <p id="tagline">You Only Live Once</p>
-        <nav>
-            <ul class="some-icons">
-            
-                <a href="https://tinyurl.com/yc34swtb" target="blank">
-                <li><i class="fab fa-facebook-square "></i></li>
-                </a>
-               
-                <a href="https://tinyurl.com/o3alr8t" target="blank">
-                <li><i class="fab fa-instagram"></i></li>
-                </a>
-            
-                
-                <a href="https://tinyurl.com/y7hwb974" target="blank">
-                <li><i class="fab fa-linkedin"></i></li>
-                </a>
-                
-               <a href="https://tinyurl.com/y73e7hhm" target="blank">
-                <li><i class="fab fa-youtube"></i></li>
-                </a>
-            </ul>
+  <header>
+  	<a class="logo" href="index.html">
+      <img src="../build/images/logo.png" alt="placeholder">
+    </a>
 
-		</nav>    
+		<p id="tagline">You Only Live Once</p>
+    <nav>
+      <ul class="soMe-icons">
+        <li>
+					<a href="https://tinyurl.com/yc34swtb" target="blank">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+				</li>
+        <li>
+					<a href="https://tinyurl.com/o3alr8t" target="blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+    		<li>
+        	<a href="https://tinyurl.com/y7hwb974" target="blank">
+          	<i class="fab fa-linkedin"></i>
+        	</a>
+				</li>
+				<li>
+			 		<a href="https://tinyurl.com/y73e7hhm" target="blank">
+          	<i class="fab fa-youtube"></i>
+        	</a>
+				</li>
+      </ul>
+		</nav>
 	</header>
       <section class="goals">
           <section class="panel">
 
-            <input type="text" placeholder="+Add new goal" autofocus class="text-input" v-model="newGoal" v-on:keyup.enter="addGoal"> 
+            <input type="text" placeholder="+Add new goal" autofocus class="text-input" v-model="newGoal" v-on:keyup.enter="addGoal">
             <button v-on:click="addGoal">Add</button>
 
           </section>
