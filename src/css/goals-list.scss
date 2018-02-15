@@ -6,17 +6,7 @@ ul, li { /* Reset ul and li */
   border: 0;
 }
 
-<<<<<<< HEAD
 .goals {
-=======
-
-
-
-.goals-list {
-    display: flex;
-    justify-content: center;
-    margin-top:50px;
->>>>>>> origin/master
     font-family: $primary-font;
     width:650px;
     margin:auto;
@@ -25,7 +15,6 @@ ul, li { /* Reset ul and li */
         display: flex;/* 
         Distribute space evenly between the contents*/
         justify-content: space-between;
-        border-bottom: 1px solid #efefef;
         padding: 10px;
         background-color: $primary-color;
     }
