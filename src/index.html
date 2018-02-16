@@ -2,77 +2,40 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>BucketLife</title>
-<link rel="stylesheet" type="text/css" href="../build/css/animate.css">
+<title>BucketLife - Slogan</title>
+<link href="https://fonts.googleapis.com/css?family=Handlee|Maven+Pro" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../build/css/sign-in.css">
+<link rel="stylesheet" type="text/css" href="../build/css/_global.css">
+<link rel="stylesheet" type="text/css" href="../build/css/add-goal.css">
 <link rel="stylesheet" type="text/css" href="../build/css/goals-list.css">
 <link rel="stylesheet" type="text/css" href="../build/css/header.css">
-<script src="js/audio.js"></script>
+<link rel="stylesheet" type="text/css" href="../build/css/animate.css">
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script defer src="js/fontawesome-all.js"></script>
-<script defer src="js/jquery.tubular.1.0.js"></script>
-<script defer src="js/tubular.js"></script>
-<script defer src="js/jquery.tubular.1.0.js"></script>
-<script defer src="js/tubular.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.tubular.1.0.js"></script>
+<script src="js/tubular.js"></script>
 
 </head>
 
 <body>
-<main id="app">
-  <header>
-  	<a class="logo" href="index.html">
-      <img src="../build/images/logo.png" alt="placeholder">
-    </a>
-
-		<p id="tagline">You Only Live Once</p>
-    <nav>
-      <ul class="soMe-icons">
-        <li>
-					<a href="https://tinyurl.com/yc34swtb" target="blank">
-						<i class="fab fa-facebook-square"></i>
-					</a>
-				</li>
-        <li>
-					<a href="https://tinyurl.com/o3alr8t" target="blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</li>
-    		<li>
-        	<a href="https://tinyurl.com/y7hwb974" target="blank">
-          	<i class="fab fa-linkedin"></i>
-        	</a>
-				</li>
-				<li>
-			 		<a href="https://tinyurl.com/y73e7hhm" target="blank">
-          	<i class="fab fa-youtube"></i>
-        	</a>
-				</li>
-      </ul>
-		</nav>
-	</header>
-      <section class="goals">
-          <section class="panel">
-            <input type="text" placeholder="+Add new goal" autofocus class="text-input" v-model="newGoal" v-on:keyup.enter="addGoal">
-            <button v-on:click="addGoal">Add</button>
-          </section>
-
-          <!-- Unordered list for holding our goal items -->
-          <ul class="list">
-
-            <li class="animated fadeInDown" v-for="goal in goalList" v-bind:class="{done: goal.checked}">
-
-              <input type="checkbox" class="checkbox" v-model="goal.checked">
-
-              <label for="checkbox">{{ goal.text }}</label>
-
-              <button class="delete" v-on:click="removeGoal(goal)">X</button>
-
-            </li>
-
-          </ul>
-      </section>
-</main>
-
-<script src="js/script-dist.js"></script>
-
+<div id="wrapper" class="container">
+	<div class="wrapper animated fadeInDown">
+	  <img class="logo" src="../build/images/logo.png" alt="BucketLife Logo"/>
+<h1>Sign In</h1>
+  <form action="my-bucket-list.html" class="animated fadeIn">
+    <div class="form-input">
+      <label for="email"></label>
+      <input type="email" name="email" required="required" placeholder="Email Address"></input>
+    </div>
+    <div class="form-input">
+      <label for="password"></label>
+      <input type="password" name="password" required="required" placeholder="Password"></input>
+    </div>
+    <div class="sign-in-button">
+      <input type="submit" class="button" title="Sign In" value="Sign In"></input>
+    </div>
+  </form>
+</div>
+	</div>
 </body>
 </html>

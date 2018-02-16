@@ -39,10 +39,10 @@
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: fixed; z-index: 1; width: 100%; height: 100%"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="tubular-container" style="overflow: hidden; position: fixed; z-index: 1; width: 100%; height: 100%; bottom: 0;"><div id="tubular-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 2; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
-        $('html,body').css({'width': '100%', 'height': '100%'});
+        $('html,body').css({'width': '100%', 'height': '100%', 'bottom': '0'});
         $body.prepend(tubularContainer);
         $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
 
@@ -130,7 +130,7 @@
     // load yt iframe js api
 
     var tag = document.createElement('script');
-    tag.src = "//www.youtube.com/iframe_api";
+    tag.src = "http://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 

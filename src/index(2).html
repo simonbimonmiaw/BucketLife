@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BucketLife</title>
+<link rel="stylesheet" type="text/css" href="../build/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../build/css/goals-list.css">
+<link rel="stylesheet" type="text/css" href="../build/css/header.css">
+<script src="js/audio.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script defer src="js/fontawesome-all.js"></script>
+<script defer src="js/jquery.tubular.1.0.js"></script>
+<script defer src="js/tubular.js"></script>
+<script defer src="js/jquery.tubular.1.0.js"></script>
+<script defer src="js/tubular.js"></script>
+
+</head>
+
+<body>
+<main id="app">
+  <header>
+  	<a class="logo" href="index.html">
+      <img src="../build/images/logo.png" alt="placeholder">
+    </a>
+
+		<p id="tagline">You Only Live Once</p>
+    <nav>
+      <ul class="soMe-icons">
+        <li>
+					<a href="https://tinyurl.com/yc34swtb" target="blank">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+				</li>
+        <li>
+					<a href="https://tinyurl.com/o3alr8t" target="blank">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+    		<li>
+        	<a href="https://tinyurl.com/y7hwb974" target="blank">
+          	<i class="fab fa-linkedin"></i>
+        	</a>
+				</li>
+				<li>
+			 		<a href="https://tinyurl.com/y73e7hhm" target="blank">
+          	<i class="fab fa-youtube"></i>
+        	</a>
+				</li>
+      </ul>
+		</nav>
+	</header>
+      <section class="goals">
+          <section class="panel">
+            <input type="text" placeholder="+Add new goal" autofocus class="text-input" v-model="newGoal" v-on:keyup.enter="addGoal">
+            <button v-on:click="addGoal">Add</button>
+          </section>
+
+          <!-- Unordered list for holding our goal items -->
+          <ul class="list">
+
+            <li class="animated fadeInDown" v-for="goal in goalList" v-bind:class="{done: goal.checked}">
+
+              <input type="checkbox" class="checkbox" v-model="goal.checked">
+
+              <label for="checkbox">{{ goal.text }}</label>
+
+              <button class="delete" v-on:click="removeGoal(goal)">X</button>
+
+            </li>
+
+          </ul>
+      </section>
+</main>
+
+<script src="js/script-dist.js"></script>
+
+</body>
+</html>
