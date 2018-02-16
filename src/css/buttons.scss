@@ -44,66 +44,64 @@ button.toggleLeft {
 
 /* add button on inspiration images */
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-
-button.goal__add {
+@mixin add-button() {
+  padding: 8px 30px;
+  font-family: $detail-font;
   border: none;
   background-color: black;
   border-radius: 25px;
   color: #ffffff;
   cursor: pointer;
-  padding: 8px 30px;
   display: inline-block;
-  margin: 22px 30px;
   text-transform: none;
-  line-height: 1.5em;
-  font-size: 16px;
+  font-size: 20px;
   outline: none;
   position: relative;
   -webkit-transition: all ease-in;
   transition: all ease-in;
+
+  span  {
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    // opacity: 0.8;
+  }
+  i {
+    font-size: 22px;
+    left: 22px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  &:hover span {
+    -webkit-transform: translate3d(10px, 0px, 0px); /* Moves the text 10px to the right on hover */
+    transform: translate3d(10px, 0px, 0px); /* Moves the text 10px to the right on hover */
+    opacity: 1;
+      padding-left: 5px;
+    text-transform: none;
+  }
+  &:hover i {
+    opacity: 1;
+  }
+  &:active span {
+    -webkit-transform: translate3d(14px, 0px, 0px);
+    transform: translate3d(14px, 0px, 0px);
+  }
+  &:active i {
+    left: 18px;
+  }
+}
+.goal__add {
+  margin: 22px 30px;
+  @include add-button();
 }
 
-button.goal__add span  {
-  display: inline-block;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  // opacity: 0.8;
+.add-new-goal {
+  margin: 0;
+  @include add-button();
 }
 
-button.goal__add i {
-  font-size: 19px;
-  left: 22px;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-button.goal__add:hover {
-  // background-color: orange;
-}
-
-button.goal__add:hover span,
-button.goal__add.hover span {
-  -webkit-transform: translate3d(10px, 0px, 0px); /* Moves the text 10px to the right on hover */
-  transform: translate3d(10px, 0px, 0px); /* Moves the text 10px to the right on hover */
-  opacity: 1;
-  font-family: $detail-font;
-  text-transform: none;
-}
-
-button.goal__add:hover i,
-button.goal__add.hover i {
-  opacity: 1;
-}
-
-button.goal__add:active span {
-  -webkit-transform: translate3d(14px, 0px, 0px);
-  transform: translate3d(14px, 0px, 0px);
-}
-button.goal__add:active i {
-  left: 18px;
-}
 /* add button */
 
 

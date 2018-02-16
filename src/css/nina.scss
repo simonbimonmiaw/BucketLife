@@ -1,4 +1,4 @@
-@import "_global";
+@import "_global.scss";
 
 .completedText {
   grid-area: textAreaLeft;
@@ -33,17 +33,18 @@ p {
   top: 20%;
 }
 
-.myList {
-  background-color: rgba(0, 0, 0, 0.9);
-  top: 20%;
-  justify-content: center;
-  height: 70vh;
-  margin: 0 25%;
-  width: 50%;
-  position: absolute;
-  text-align: center;
-  @include add-shadow();
-}
+// .myList {
+//   display: flex;
+//   background-color: rgba(0, 0, 0, 0.9);
+//   top: 20%;
+//   // justify-content: center;
+//
+//   margin: 0 25%;
+//   width: 50%;
+//   position: absolute;
+//   text-align: center;
+//   @include add-shadow();
+// }
 
 .suggestion {
   position:absolute;
@@ -98,8 +99,9 @@ p {
     "buttonRight ideaGoal";
   position:  absolute;
   right: -600px;
-  transition: right cubic-bezier (0, 0.07, 0.56, 0.92) 0.3s;
   @include add-shadow();
+transition-timing-function: cubic-bezier(0, 0, 0, 0.67);
+   transition-duration: 0.8s;
 
   &__text {
     grid-area: textAreaRight;
@@ -120,6 +122,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
+    padding-bottom: 40px;
 }
 
 .flexContainerLeft {
@@ -139,6 +142,7 @@ p {
   width: 250px;
   height: 100px;
   margin: 15px 5px;
+  padding-bottom: 10px;
   text-align: center;
   border-radius: 5px;
 

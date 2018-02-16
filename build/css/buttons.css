@@ -56,56 +56,91 @@ button.toggleLeft {
 
 /*** Toggle buttons end***/
 /* add button on inspiration images */
-button.goal__add {
+.goal__add {
+  margin: 22px 30px;
+  padding: 8px 30px;
+  font-family: Seaweed Script, cursive;
   border: none;
   background-color: black;
   border-radius: 25px;
   color: #ffffff;
   cursor: pointer;
-  padding: 8px 30px;
   display: inline-block;
-  margin: 22px 30px;
   text-transform: none;
-  line-height: 1.5em;
-  font-size: 16px;
+  font-size: 20px;
   outline: none;
   position: relative;
   -webkit-transition: all ease-in;
   transition: all ease-in; }
+  .goal__add span {
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .goal__add i {
+    font-size: 22px;
+    left: 22px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .goal__add:hover span {
+    -webkit-transform: translate3d(10px, 0px, 0px);
+    /* Moves the text 10px to the right on hover */
+    transform: translate3d(10px, 0px, 0px);
+    /* Moves the text 10px to the right on hover */
+    opacity: 1;
+    padding-left: 5px;
+    text-transform: none; }
+  .goal__add:hover i {
+    opacity: 1; }
+  .goal__add:active span {
+    -webkit-transform: translate3d(14px, 0px, 0px);
+    transform: translate3d(14px, 0px, 0px); }
+  .goal__add:active i {
+    left: 18px; }
 
-button.goal__add span {
-  display: inline-block;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-
-button.goal__add i {
-  font-size: 19px;
-  left: 22px;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
-
-button.goal__add:hover span,
-button.goal__add.hover span {
-  -webkit-transform: translate3d(10px, 0px, 0px);
-  /* Moves the text 10px to the right on hover */
-  transform: translate3d(10px, 0px, 0px);
-  /* Moves the text 10px to the right on hover */
-  opacity: 1;
+.add-new-goal {
+  margin: 0;
+  padding: 8px 30px;
   font-family: Seaweed Script, cursive;
-  text-transform: none; }
-
-button.goal__add:hover i,
-button.goal__add.hover i {
-  opacity: 1; }
-
-button.goal__add:active span {
-  -webkit-transform: translate3d(14px, 0px, 0px);
-  transform: translate3d(14px, 0px, 0px); }
-
-button.goal__add:active i {
-  left: 18px; }
+  border: none;
+  background-color: black;
+  border-radius: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: none;
+  font-size: 20px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all ease-in;
+  transition: all ease-in; }
+  .add-new-goal span {
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .add-new-goal i {
+    font-size: 22px;
+    left: 22px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .add-new-goal:hover span {
+    -webkit-transform: translate3d(10px, 0px, 0px);
+    /* Moves the text 10px to the right on hover */
+    transform: translate3d(10px, 0px, 0px);
+    /* Moves the text 10px to the right on hover */
+    opacity: 1;
+    padding-left: 5px;
+    text-transform: none; }
+  .add-new-goal:hover i {
+    opacity: 1; }
+  .add-new-goal:active span {
+    -webkit-transform: translate3d(14px, 0px, 0px);
+    transform: translate3d(14px, 0px, 0px); }
+  .add-new-goal:active i {
+    left: 18px; }
 
 /* add button */
 /* Close x button sign  https://codepen.io/maneeshc/pen/pPxKQm  */

@@ -1,4 +1,4 @@
-@import 'global';
+@import '_global.scss';
 
 ul, li { /* Reset ul and li */
   margin: 0;
@@ -7,79 +7,76 @@ ul, li { /* Reset ul and li */
 }
 
 .goals {
-    font-family: $primary-font;
-    width:650px;
-    margin:auto;
-      
-    .panel {          
-        display: flex;/* 
-        Distribute space evenly between the contents*/
-        justify-content: space-between;
-        padding: 10px;
-        background-color: $primary-color;
+  font-family: $primary-font;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 20%;
+  padding: 20px;
+  margin:auto;
+  width: 50%;
+  text-align: center;
+  @include add-shadow();
+
+  .panel {
+    display: flex;/*
+    Distribute space evenly between the contents*/
+    justify-content: space-between;
+    padding: 10px;
+    background-color: $primary-color;
+  }
+
+  li {
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 4px;
+
+  }
+
+  .text-input {
+    border: 1px solid #dedede;
+    padding-left: 10px;
+    width: 70%;
+    height: 35px;
+    color: #555;
+  }
+
+  .delete {
+    max-width:10px;
+  }
+}
+
+.list {
+  li {
+    background-color: $secondary-color;
+
+    .delete {
+      background-color: transparent;
+      color: #ddd;
+      /* Hide the delete button by default*/
+      visibility: hidden;
+      font-size: 20px;
+      outline: none;
+      margin: auto;
     }
-    
-    li {
-        list-style-type: none;
-        border-bottom: 1px solid #efefef;
-        padding: 10px;
-    }
-    
-    .text-input {
-        border: 1px solid #dedede;
-        padding-left: 10px;
-        width: 70%;
-        height: 35px;
-        color: #555;
-    }
-    
-    button {
-        outline: 0;
-        width: 100px;
-        height: 38px;
-        cursor: pointer;
-        font-size: 12px;
-        
-        .delete {
-            max-width:10px;
-        }
-    }
-    
-    .list {
-        
-        li {
-            background-color: $secondary-color;
-            
-            .delete {
-                background-color: transparent;
-                border: 1px solid $secondary-color;
-                color: #ddd;
-                /* Hide the delete button by default*/
-                visibility: hidden;
-                font-size: 20px;
-                font-weight: bold;    
-            }
-        } 
-        
-        li:hover > .delete {
-          /* Show the delete button when hovering over each list item */
-          visibility: visible;
-        }
-        
-        label {
-          padding-right: 10px;
-          display: inline-block;
-          width: 70%;
-          font-size: 18px;
-          line-height: 16px;
-          color: #fcfcfc;
-          z-index: 2;
-          overflow: hidden;
-        }
-        
-        li.done label {
-          color: #d9d9d9;
-          text-decoration: line-through;
-        }
-    }
+  }
+  li:hover > .delete {
+    /* Show the delete button when hovering over each list item */
+    visibility: visible;
+  }
+
+  label {
+    padding-right: 10px;
+    display: inline-block;
+    width: 70%;
+    font-size: $primary-font-size;
+    line-height: 18px;
+    color: #fcfcfc;
+    z-index: 2;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  li.done label {
+    color: #d9d9d9;
+    text-decoration: line-through;
+  }
 }

@@ -26,7 +26,9 @@ var example1 = new Vue({
        "name":"ride",
        "tagline": "Ride a horse"
      },
-    ]
+   ],
+   newGoal: "",
+   goalList: []
   },
   methods: {
     add: function (event) {
@@ -51,6 +53,25 @@ var example1 = new Vue({
     },
     toggleInspiration: function (event) {
       document.getElementsByClassName('inspiration')[0].classList.toggle("hide");
+    },
+    addGoal: function() {
+      //trim() is used to remove whitespace from both ends of a string
+      var goal = this.newGoal.trim();
+      //if goal is not an empty string
+      if (goal) {
+        //Push an object containing the goal to the goalList array
+        this.goalList.push({
+          text: goal,
+          checked: false
+        });
+        //Reset newGoal to an empty string so the input field is cleared
+        this.newGoal = "";
+      }
+    },
+
+    removeGoal: function(goal) {
+      var index = this.goalList.indexOf(goal);
+      this.goalList.splice(index, 1);
     }
   }
 })

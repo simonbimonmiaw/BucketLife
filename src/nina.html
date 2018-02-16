@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="../build/css/buttons.css">
-<link rel="stylesheet" type="text/css" href="../build/css/nina.css">
+
 <link rel="stylesheet" type="text/css" href="../build/css/_global.css">
-<link rel="stylesheet" type="text/css" href="../build/css/goals-list.css">
-<link rel="stylesheet" type="text/css" href="../build/css/animate.css">
 <link rel="stylesheet" type="text/css" href="../build/css/header.css">
-<link rel="stylesheet" type="text/css" href="../build/css/add-goal.css">
+<link rel="stylesheet" type="text/css" href="../build/css/nina.css">
+<link rel="stylesheet" type="text/css" href="../build/css/goals-list.css">
+<link rel="stylesheet" type="text/css" href="../build/css/buttons.css">
+<link rel="stylesheet" type="text/css" href="../build/css/animate.css">
 <script defer src="js/fontawesome-all.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cabin|Cantarell|Passion+One:700|Seaweed+Script" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -50,8 +50,8 @@
 		</nav>
 	</header>
 
-	<main id="app">
-		<aside class="completed">
+<main id="app">
+	<aside class="completed">
 			<div class="completed__text">
 				<h2 class="completed__text">Completed goals</h2>
 				<p class="completed__subText">You completed these goals. Yay!</p>
@@ -68,28 +68,27 @@
 			<button v-on:click="toggleInspiration" class="toggleLeft"><h4 class="toggleLeft__title">Completed</h4></button>
 		</aside>
 
-<aside class="myList">
-	<h1>My bucket list</h1>
-				<!-- <form class="goals" v-on:submit.prevent="addGoal()">
-					<input ref="my_input" class="goal" maxlength="35" type="text" placeholder="+ Add a new goal">
-					<button type="submit" class="add">Add</button>
-				</form>
-			</section>
-			<section class="goals-list">
-				<form>
-								<ol>
-										<li class="animated fadeInDown" v-for="(item, index) in goals" v-bind:class="{ done: completeGoal }" >{{ item }}
-												<input type="checkbox" class="goal-options" v-model="completeGoal" :value="item" v-on:click=>
-												<button class="goal-options" v-on:click.prevent="deleteGoal(index)">X</button>
-										</li>
-								</ol>
-				</form> -->
-</aside>
+<aside class="goals">
+		<h1>My bucket list</h1>
+				<section class="panel">
+					<input type="text" placeholder="+ Add new goal" autofocus class="text-input" v-model="newGoal" v-on:keyup.enter="addGoal">
+					<button class="add-new-goal" v-on:click="addGoal"><span class="add--arrow">Add me</span><i class="ion-android-arrow-forward "></i></button>
+				</section>
+				<!-- Unordered list for holding our goal items -->
+				<ul class="list">
+					<li class="animated fadeInDown" v-for="goal in goalList" v-bind:class="{done: goal.checked}">
+						<input type="checkbox" class="checkbox" v-model="goal.checked">
+						<label for="checkbox">{{ goal.text }}</label>
+						<button class="delete" v-on:click="removeGoal(goal)"><i class="far fa-trash-alt"></i></button>
+					</li>
+				</ul>
+		</aside>
 
-<div class="suggestion">
-	<p class="suggestion__text">Check out<br>some ideas!</p>
-	<img class="suggestion__image" src="../build/images/arrow.svg" alt="Arrow">
-</div>
+
+	<div class="suggestion">
+		<p class="suggestion__text">Check out<br>some ideas!</p>
+		<img class="suggestion__image" src="../build/images/arrow.svg" alt="Arrow">
+	</div>
 
 	<aside class="inspiration">
 		<button v-on:click="toggleInspiration" class="toggleRight"><h4 class="toggleRight__title">Inspiration</h4></button>
@@ -120,9 +119,7 @@
 </main>
 
 <script type="text/javascript" src="../src/js/script.js"></script>
-
-<!-- <script src="../src/js/script-dist.js"></script> -->
-<!--this script is intefering with the script.js document -->
+<!-- <script src="js/script-dist.js"></script> -->
 
 </body>
 </html>
