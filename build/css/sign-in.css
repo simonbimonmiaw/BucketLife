@@ -12,6 +12,9 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
+body {
+  background-image: none !important; }
+
 .logo {
   width: 50%;
   display: -webkit-box;

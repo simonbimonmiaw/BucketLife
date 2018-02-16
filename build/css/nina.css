@@ -220,3 +220,23 @@ p {
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s; }
+
+.hawaii {
+  background-image: url("http://beatofhawaii.com/wp-content/uploads/2017/01/Cheapest-Time-to-Fly-to-Hawaii-2.jpg");
+  border-color: black;
+  border: solid;
+  border-width: 2px;
+  background-size: cover;
+  width: 250px;
+  height: 100px;
+  margin: 15px 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-radius: 5px; }
+  .hawaii:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.05);
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }

@@ -7,8 +7,8 @@ var example1 = new Vue({
         "tagline": "Travel to the USA"
       },
       {
-        "name":"ride",
-        "tagline": "Ride a horse"
+        "name":"swim",
+        "tagline": "Swim with whales"
       },
       {
         "name":"drive",
@@ -16,15 +16,15 @@ var example1 = new Vue({
       },
       {
         "name":"paintball",
-        "tagline": "Shoot your friend in the ass"
+        "tagline": "Play paintball"
       },
       {
        "name":"ride",
        "tagline": "Ride a horse"
      },
      {
-       "name":"ride",
-       "tagline": "Ride a horse"
+       "name":"hawaii",
+       "tagline": "Travel to Hawaii"
      },
    ],
    newGoal: "",
@@ -50,6 +50,11 @@ var example1 = new Vue({
       var section = parentArticle.parentElement;
       console.log(section);
 
+//Makes tagline of each image in inspiration go to the bucket list
+      this.goalList.push({
+        text: tagline,
+        checked: false
+      });
     },
     toggleInspiration: function (event) {
       document.getElementsByClassName('inspiration')[0].classList.toggle("hide");

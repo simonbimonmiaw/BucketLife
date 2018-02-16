@@ -183,3 +183,8 @@ transition-timing-function: cubic-bezier(0, 0, 0, 0.67);
   background-image: url('http://yourdream.s3.amazonaws.com/media/cache/49/81/49811164c1ec4dd5c196b05f36b50bef.jpg');
     @include image-box();
 }
+
+.hawaii {
+  background-image: url('http://beatofhawaii.com/wp-content/uploads/2017/01/Cheapest-Time-to-Fly-to-Hawaii-2.jpg');
+    @include image-box();
+}

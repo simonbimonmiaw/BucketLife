@@ -109,7 +109,7 @@
 
 
 		<section class="flexContainerRight">
-			<article :class="item.name" v-for="item in inspiration">
+			<article :class="item.name" v-for="item in inspiration" v-on:click="addGoal">
 			     <h3 class="goal__tagline" > {{ item.tagline }}</h3>
 			     <button class="goal__add" v-on:click="add"><span class="add--arrow">Add me</span><i class="ion-android-arrow-forward "></i></button>
 			</article>
@@ -119,6 +119,6 @@
 </main>
 
 <script type="text/javascript" src="../src/js/script.js"></script>
-<!-- <script src="js/script-dist.js"></script> -->
+<script src="../src/js/script-dist.js"></script>
 </body>
 </html>
